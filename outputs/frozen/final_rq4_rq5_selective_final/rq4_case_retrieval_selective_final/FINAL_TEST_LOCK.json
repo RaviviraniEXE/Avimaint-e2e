@@ -1,0 +1,19 @@
+{
+  "version": "selective_rq4_rq5_final",
+  "locked": true,
+  "status": "complete",
+  "no_post_test_tuning": true,
+  "selected_mode": "selective_canonical_bm25",
+  "selected_tau": 0.15,
+  "selected_aggregation": "cluster_expanded",
+  "run_identity": {
+    "cases_sha256": "ad5b5771ae4c41b60402128fc9c99c6e59d87f4af332864a205106a85db30be2",
+    "protocol_sha256": "ffeac9d75e5741eede355617402ce85ba95fbdb66d53ab1bfb85c7079fd6861f",
+    "preregistered_policy_sha256": "131f53f43e06b4f1b119089d61d6a236618dbcce1f529db2f1568beb1b99e77f",
+    "predictions_sha256": "bb5dcdd7246c1e3220f1fefc6f092591f99d6fb3874ac1a258bb9734bb7a8a15",
+    "prediction_manifest_sha256": "3558826f2e0b45ea96983f6380442f5638fea4f893de65730b1a15a2af5fac79"
+  },
+  "opened_utc": "2026-09-08T16:22:20.054125+00:00",
+  "completed_utc": "2026-09-08T16:35:43.001491+00:00",
+  "final_test_sha256": "37ef347cc07c92c45944ee9f5a88a4dccade3937716f51f1cd7c8838397ec560"
+}

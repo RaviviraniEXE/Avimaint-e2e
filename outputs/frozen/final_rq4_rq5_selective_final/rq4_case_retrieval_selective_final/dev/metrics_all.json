@@ -1,0 +1,1368 @@
+{
+  "selective_surface_bm25|cluster_expanded|tau=0.00|mode_selection": {
+    "queries": 829,
+    "hit_at_1": 0.827503015681544,
+    "hit_at_3": 0.9613992762364294,
+    "hit_at_5": 0.9843184559710495,
+    "mrr": 0.8919782870928831,
+    "ndcg_at_5": 0.9152182443931662,
+    "macro_action_family_recall": 0.31510369937889715,
+    "majority_family_baseline": {
+      "family": "Replace",
+      "hit_at_1": 0.7659831121833535,
+      "hit_at_3": 0.7659831121833535,
+      "mrr": 0.7659831121833535,
+      "macro_action_family_recall": 0.14285714285714285,
+      "family_counts": {
+        "Replace": 635,
+        "Adjust": 68,
+        "Diagnose": 47,
+        "Inspect": 42,
+        "Service": 23,
+        "Repair": 12,
+        "Calibrate": 2
+      }
+    },
+    "hit_at_1_minus_majority_baseline": 0.06151990349819059,
+    "macro_recall_minus_majority_baseline": 0.1722465565217543,
+    "pattern_set_recall_at_3": 0.827503015681544,
+    "pattern_set_recall_at_5": 0.827503015681544,
+    "recorded_multi_family_set_recall_at_3": 0.926216324889425,
+    "recorded_multi_family_set_recall_at_5": 0.9638118214716526,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.6357056694813028,
+    "rung_distribution": {
+      "B": 80,
+      "C": 568,
+      "D": 181
+    },
+    "action_support_tier_distribution": {
+      "moderate": 6,
+      "strong": 823
+    },
+    "evidence_tier_distribution": {
+      "exploratory": 568,
+      "moderate": 80,
+      "nearest_cases_only": 181
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 68,
+        "hit_at_1": 0.5294117647058824
+      },
+      "Calibrate": {
+        "queries": 2,
+        "hit_at_1": 0.0
+      },
+      "Diagnose": {
+        "queries": 47,
+        "hit_at_1": 0.6808510638297872
+      },
+      "Inspect": {
+        "queries": 42,
+        "hit_at_1": 0.023809523809523808
+      },
+      "Repair": {
+        "queries": 12,
+        "hit_at_1": 0.0
+      },
+      "Replace": {
+        "queries": 635,
+        "hit_at_1": 0.9716535433070866
+      },
+      "Service": {
+        "queries": 23,
+        "hit_at_1": 0.0
+      }
+    },
+    "tau": 0.0,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "selective_canonical_bm25|cluster_expanded|tau=0.00|mode_selection": {
+    "queries": 829,
+    "hit_at_1": 0.8311218335343787,
+    "hit_at_3": 0.962605548854041,
+    "hit_at_5": 0.9867310012062727,
+    "mrr": 0.8948934459187776,
+    "ndcg_at_5": 0.9179923659908766,
+    "macro_action_family_recall": 0.326098108869951,
+    "majority_family_baseline": {
+      "family": "Replace",
+      "hit_at_1": 0.7659831121833535,
+      "hit_at_3": 0.7659831121833535,
+      "mrr": 0.7659831121833535,
+      "macro_action_family_recall": 0.14285714285714285,
+      "family_counts": {
+        "Replace": 635,
+        "Adjust": 68,
+        "Diagnose": 47,
+        "Inspect": 42,
+        "Service": 23,
+        "Repair": 12,
+        "Calibrate": 2
+      }
+    },
+    "hit_at_1_minus_majority_baseline": 0.06513872135102527,
+    "macro_recall_minus_majority_baseline": 0.18324096601280815,
+    "pattern_set_recall_at_3": 0.8311218335343787,
+    "pattern_set_recall_at_5": 0.8311218335343787,
+    "recorded_multi_family_set_recall_at_3": 0.9225975070365903,
+    "recorded_multi_family_set_recall_at_5": 0.9674306393244874,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.6972255729794934,
+    "rung_distribution": {
+      "B": 80,
+      "C": 569,
+      "D": 180
+    },
+    "action_support_tier_distribution": {
+      "moderate": 5,
+      "strong": 824
+    },
+    "evidence_tier_distribution": {
+      "exploratory": 569,
+      "moderate": 80,
+      "nearest_cases_only": 180
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 68,
+        "hit_at_1": 0.5441176470588235
+      },
+      "Calibrate": {
+        "queries": 2,
+        "hit_at_1": 0.0
+      },
+      "Diagnose": {
+        "queries": 47,
+        "hit_at_1": 0.7446808510638298
+      },
+      "Inspect": {
+        "queries": 42,
+        "hit_at_1": 0.023809523809523808
+      },
+      "Repair": {
+        "queries": 12,
+        "hit_at_1": 0.0
+      },
+      "Replace": {
+        "queries": 635,
+        "hit_at_1": 0.9700787401574803
+      },
+      "Service": {
+        "queries": 23,
+        "hit_at_1": 0.0
+      }
+    },
+    "tau": 0.0,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "selective_tfidf|cluster_expanded|tau=0.00|mode_selection": {
+    "queries": 829,
+    "hit_at_1": 0.8166465621230398,
+    "hit_at_3": 0.9650180940892642,
+    "hit_at_5": 0.985524728588661,
+    "mrr": 0.8878769601930036,
+    "ndcg_at_5": 0.9124034333857078,
+    "macro_action_family_recall": 0.28926357609554126,
+    "majority_family_baseline": {
+      "family": "Replace",
+      "hit_at_1": 0.7659831121833535,
+      "hit_at_3": 0.7659831121833535,
+      "mrr": 0.7659831121833535,
+      "macro_action_family_recall": 0.14285714285714285,
+      "family_counts": {
+        "Replace": 635,
+        "Adjust": 68,
+        "Diagnose": 47,
+        "Inspect": 42,
+        "Service": 23,
+        "Repair": 12,
+        "Calibrate": 2
+      }
+    },
+    "hit_at_1_minus_majority_baseline": 0.0506634499396863,
+    "macro_recall_minus_majority_baseline": 0.14640643323839841,
+    "pattern_set_recall_at_3": 0.8190591073582629,
+    "pattern_set_recall_at_5": 0.8262967430639324,
+    "recorded_multi_family_set_recall_at_3": 0.9264173703256936,
+    "recorded_multi_family_set_recall_at_5": 0.9668275030156815,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.6791314837153196,
+    "rung_distribution": {
+      "B": 80,
+      "C": 567,
+      "D": 182
+    },
+    "action_support_tier_distribution": {
+      "moderate": 3,
+      "strong": 826
+    },
+    "evidence_tier_distribution": {
+      "exploratory": 567,
+      "moderate": 80,
+      "nearest_cases_only": 182
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 68,
+        "hit_at_1": 0.5
+      },
+      "Calibrate": {
+        "queries": 2,
+        "hit_at_1": 0.0
+      },
+      "Diagnose": {
+        "queries": 47,
+        "hit_at_1": 0.5531914893617021
+      },
+      "Inspect": {
+        "queries": 42,
+        "hit_at_1": 0.0
+      },
+      "Repair": {
+        "queries": 12,
+        "hit_at_1": 0.0
+      },
+      "Replace": {
+        "queries": 635,
+        "hit_at_1": 0.9716535433070866
+      },
+      "Service": {
+        "queries": 23,
+        "hit_at_1": 0.0
+      }
+    },
+    "tau": 0.0,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "structure|cluster_expanded|tau=0.00|mode_selection": {
+    "queries": 829,
+    "hit_at_1": 0.8238841978287093,
+    "hit_at_3": 0.9650180940892642,
+    "hit_at_5": 0.985524728588661,
+    "mrr": 0.8896461600321672,
+    "ndcg_at_5": 0.9135996800040966,
+    "macro_action_family_recall": 0.3112494386261792,
+    "majority_family_baseline": {
+      "family": "Replace",
+      "hit_at_1": 0.7659831121833535,
+      "hit_at_3": 0.7659831121833535,
+      "mrr": 0.7659831121833535,
+      "macro_action_family_recall": 0.14285714285714285,
+      "family_counts": {
+        "Replace": 635,
+        "Adjust": 68,
+        "Diagnose": 47,
+        "Inspect": 42,
+        "Service": 23,
+        "Repair": 12,
+        "Calibrate": 2
+      }
+    },
+    "hit_at_1_minus_majority_baseline": 0.05790108564535579,
+    "macro_recall_minus_majority_baseline": 0.16839229576903636,
+    "pattern_set_recall_at_3": 0.8516284680337757,
+    "pattern_set_recall_at_5": 0.8685162846803377,
+    "recorded_multi_family_set_recall_at_3": 0.9264173703256936,
+    "recorded_multi_family_set_recall_at_5": 0.9666264575794129,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.7852834740651388,
+    "rung_distribution": {
+      "B": 20,
+      "C": 630,
+      "D": 179
+    },
+    "action_support_tier_distribution": {
+      "strong": 829
+    },
+    "evidence_tier_distribution": {
+      "exploratory": 630,
+      "moderate": 20,
+      "nearest_cases_only": 179
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 68,
+        "hit_at_1": 0.6176470588235294
+      },
+      "Calibrate": {
+        "queries": 2,
+        "hit_at_1": 0.0
+      },
+      "Diagnose": {
+        "queries": 47,
+        "hit_at_1": 0.5957446808510638
+      },
+      "Inspect": {
+        "queries": 42,
+        "hit_at_1": 0.0
+      },
+      "Repair": {
+        "queries": 12,
+        "hit_at_1": 0.0
+      },
+      "Replace": {
+        "queries": 635,
+        "hit_at_1": 0.9653543307086614
+      },
+      "Service": {
+        "queries": 23,
+        "hit_at_1": 0.0
+      }
+    },
+    "tau": 0.0,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "weighted_hybrid|cluster_expanded|tau=0.00|mode_selection": {
+    "queries": 829,
+    "hit_at_1": 0.827503015681544,
+    "hit_at_3": 0.9698431845597105,
+    "hit_at_5": 0.985524728588661,
+    "mrr": 0.8947728186570165,
+    "ndcg_at_5": 0.9174293305517971,
+    "macro_action_family_recall": 0.3248434103076647,
+    "majority_family_baseline": {
+      "family": "Replace",
+      "hit_at_1": 0.7659831121833535,
+      "hit_at_3": 0.7659831121833535,
+      "mrr": 0.7659831121833535,
+      "macro_action_family_recall": 0.14285714285714285,
+      "family_counts": {
+        "Replace": 635,
+        "Adjust": 68,
+        "Diagnose": 47,
+        "Inspect": 42,
+        "Service": 23,
+        "Repair": 12,
+        "Calibrate": 2
+      }
+    },
+    "hit_at_1_minus_majority_baseline": 0.06151990349819059,
+    "macro_recall_minus_majority_baseline": 0.18198626745052188,
+    "pattern_set_recall_at_3": 0.8287092882991556,
+    "pattern_set_recall_at_5": 0.841978287092883,
+    "recorded_multi_family_set_recall_at_3": 0.9264173703256936,
+    "recorded_multi_family_set_recall_at_5": 0.9660233212706071,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.6357056694813028,
+    "rung_distribution": {
+      "B": 80,
+      "C": 569,
+      "D": 180
+    },
+    "action_support_tier_distribution": {
+      "moderate": 3,
+      "strong": 826
+    },
+    "evidence_tier_distribution": {
+      "exploratory": 569,
+      "moderate": 80,
+      "nearest_cases_only": 180
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 68,
+        "hit_at_1": 0.6470588235294118
+      },
+      "Calibrate": {
+        "queries": 2,
+        "hit_at_1": 0.0
+      },
+      "Diagnose": {
+        "queries": 47,
+        "hit_at_1": 0.6170212765957447
+      },
+      "Inspect": {
+        "queries": 42,
+        "hit_at_1": 0.047619047619047616
+      },
+      "Repair": {
+        "queries": 12,
+        "hit_at_1": 0.0
+      },
+      "Replace": {
+        "queries": 635,
+        "hit_at_1": 0.9622047244094488
+      },
+      "Service": {
+        "queries": 23,
+        "hit_at_1": 0.0
+      }
+    },
+    "tau": 0.0,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "rrf_hybrid|cluster_expanded|tau=0.00|mode_selection": {
+    "queries": 829,
+    "hit_at_1": 0.827503015681544,
+    "hit_at_3": 0.9650180940892642,
+    "hit_at_5": 0.985524728588661,
+    "mrr": 0.89410936871733,
+    "ndcg_at_5": 0.9168840383055766,
+    "macro_action_family_recall": 0.31603941626910437,
+    "majority_family_baseline": {
+      "family": "Replace",
+      "hit_at_1": 0.7659831121833535,
+      "hit_at_3": 0.7659831121833535,
+      "mrr": 0.7659831121833535,
+      "macro_action_family_recall": 0.14285714285714285,
+      "family_counts": {
+        "Replace": 635,
+        "Adjust": 68,
+        "Diagnose": 47,
+        "Inspect": 42,
+        "Service": 23,
+        "Repair": 12,
+        "Calibrate": 2
+      }
+    },
+    "hit_at_1_minus_majority_baseline": 0.06151990349819059,
+    "macro_recall_minus_majority_baseline": 0.17318227341196152,
+    "pattern_set_recall_at_3": 0.827503015681544,
+    "pattern_set_recall_at_5": 0.8359469240048251,
+    "recorded_multi_family_set_recall_at_3": 0.9280257338158423,
+    "recorded_multi_family_set_recall_at_5": 0.9678327301970244,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.6525934861278649,
+    "rung_distribution": {
+      "B": 80,
+      "C": 569,
+      "D": 180
+    },
+    "action_support_tier_distribution": {
+      "moderate": 1,
+      "strong": 828
+    },
+    "evidence_tier_distribution": {
+      "exploratory": 569,
+      "moderate": 80,
+      "nearest_cases_only": 180
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 68,
+        "hit_at_1": 0.6029411764705882
+      },
+      "Calibrate": {
+        "queries": 2,
+        "hit_at_1": 0.0
+      },
+      "Diagnose": {
+        "queries": 47,
+        "hit_at_1": 0.6170212765957447
+      },
+      "Inspect": {
+        "queries": 42,
+        "hit_at_1": 0.023809523809523808
+      },
+      "Repair": {
+        "queries": 12,
+        "hit_at_1": 0.0
+      },
+      "Replace": {
+        "queries": 635,
+        "hit_at_1": 0.968503937007874
+      },
+      "Service": {
+        "queries": 23,
+        "hit_at_1": 0.0
+      }
+    },
+    "tau": 0.0,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "selective_canonical_bm25|cluster_expanded|tau=0.00|tau_selection": {
+    "queries": 829,
+    "hit_at_1": 0.8311218335343787,
+    "hit_at_3": 0.962605548854041,
+    "hit_at_5": 0.9867310012062727,
+    "mrr": 0.8948934459187776,
+    "ndcg_at_5": 0.9179923659908766,
+    "macro_action_family_recall": 0.326098108869951,
+    "majority_family_baseline": {
+      "family": "Replace",
+      "hit_at_1": 0.7659831121833535,
+      "hit_at_3": 0.7659831121833535,
+      "mrr": 0.7659831121833535,
+      "macro_action_family_recall": 0.14285714285714285,
+      "family_counts": {
+        "Replace": 635,
+        "Adjust": 68,
+        "Diagnose": 47,
+        "Inspect": 42,
+        "Service": 23,
+        "Repair": 12,
+        "Calibrate": 2
+      }
+    },
+    "hit_at_1_minus_majority_baseline": 0.06513872135102527,
+    "macro_recall_minus_majority_baseline": 0.18324096601280815,
+    "pattern_set_recall_at_3": 0.8311218335343787,
+    "pattern_set_recall_at_5": 0.8311218335343787,
+    "recorded_multi_family_set_recall_at_3": 0.9225975070365903,
+    "recorded_multi_family_set_recall_at_5": 0.9674306393244874,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.6972255729794934,
+    "rung_distribution": {
+      "B": 80,
+      "C": 569,
+      "D": 180
+    },
+    "action_support_tier_distribution": {
+      "moderate": 5,
+      "strong": 824
+    },
+    "evidence_tier_distribution": {
+      "exploratory": 569,
+      "moderate": 80,
+      "nearest_cases_only": 180
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 68,
+        "hit_at_1": 0.5441176470588235
+      },
+      "Calibrate": {
+        "queries": 2,
+        "hit_at_1": 0.0
+      },
+      "Diagnose": {
+        "queries": 47,
+        "hit_at_1": 0.7446808510638298
+      },
+      "Inspect": {
+        "queries": 42,
+        "hit_at_1": 0.023809523809523808
+      },
+      "Repair": {
+        "queries": 12,
+        "hit_at_1": 0.0
+      },
+      "Replace": {
+        "queries": 635,
+        "hit_at_1": 0.9700787401574803
+      },
+      "Service": {
+        "queries": 23,
+        "hit_at_1": 0.0
+      }
+    },
+    "tau": 0.0,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "selective_canonical_bm25|cluster_expanded|tau=0.05|tau_selection": {
+    "queries": 829,
+    "hit_at_1": 0.827503015681544,
+    "hit_at_3": 0.9601930036188179,
+    "hit_at_5": 0.985524728588661,
+    "mrr": 0.8926417370325693,
+    "ndcg_at_5": 0.9158649351296646,
+    "macro_action_family_recall": 0.3254231932344055,
+    "majority_family_baseline": {
+      "family": "Replace",
+      "hit_at_1": 0.7659831121833535,
+      "hit_at_3": 0.7659831121833535,
+      "mrr": 0.7659831121833535,
+      "macro_action_family_recall": 0.14285714285714285,
+      "family_counts": {
+        "Replace": 635,
+        "Adjust": 68,
+        "Diagnose": 47,
+        "Inspect": 42,
+        "Service": 23,
+        "Repair": 12,
+        "Calibrate": 2
+      }
+    },
+    "hit_at_1_minus_majority_baseline": 0.06151990349819059,
+    "macro_recall_minus_majority_baseline": 0.18256605037726265,
+    "pattern_set_recall_at_3": 0.827503015681544,
+    "pattern_set_recall_at_5": 0.827503015681544,
+    "recorded_multi_family_set_recall_at_3": 0.9225975070365903,
+    "recorded_multi_family_set_recall_at_5": 0.96562123039807,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.6972255729794934,
+    "rung_distribution": {
+      "B": 80,
+      "C": 569,
+      "D": 180
+    },
+    "action_support_tier_distribution": {
+      "strong": 829
+    },
+    "evidence_tier_distribution": {
+      "exploratory": 569,
+      "moderate": 80,
+      "nearest_cases_only": 180
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 68,
+        "hit_at_1": 0.5441176470588235
+      },
+      "Calibrate": {
+        "queries": 2,
+        "hit_at_1": 0.0
+      },
+      "Diagnose": {
+        "queries": 47,
+        "hit_at_1": 0.7446808510638298
+      },
+      "Inspect": {
+        "queries": 42,
+        "hit_at_1": 0.023809523809523808
+      },
+      "Repair": {
+        "queries": 12,
+        "hit_at_1": 0.0
+      },
+      "Replace": {
+        "queries": 635,
+        "hit_at_1": 0.9653543307086614
+      },
+      "Service": {
+        "queries": 23,
+        "hit_at_1": 0.0
+      }
+    },
+    "tau": 0.05,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "selective_canonical_bm25|cluster_expanded|tau=0.10|tau_selection": {
+    "queries": 829,
+    "hit_at_1": 0.8226779252110977,
+    "hit_at_3": 0.9601930036188179,
+    "hit_at_5": 0.985524728588661,
+    "mrr": 0.8902291917973462,
+    "ndcg_at_5": 0.914084137800697,
+    "macro_action_family_recall": 0.3323853824236724,
+    "majority_family_baseline": {
+      "family": "Replace",
+      "hit_at_1": 0.7659831121833535,
+      "hit_at_3": 0.7659831121833535,
+      "mrr": 0.7659831121833535,
+      "macro_action_family_recall": 0.14285714285714285,
+      "family_counts": {
+        "Replace": 635,
+        "Adjust": 68,
+        "Diagnose": 47,
+        "Inspect": 42,
+        "Service": 23,
+        "Repair": 12,
+        "Calibrate": 2
+      }
+    },
+    "hit_at_1_minus_majority_baseline": 0.05669481302774426,
+    "macro_recall_minus_majority_baseline": 0.18952823956652953,
+    "pattern_set_recall_at_3": 0.8238841978287093,
+    "pattern_set_recall_at_5": 0.8238841978287093,
+    "recorded_multi_family_set_recall_at_3": 0.9232006433453961,
+    "recorded_multi_family_set_recall_at_5": 0.96562123039807,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.6972255729794934,
+    "rung_distribution": {
+      "B": 80,
+      "C": 569,
+      "D": 180
+    },
+    "action_support_tier_distribution": {
+      "strong": 829
+    },
+    "evidence_tier_distribution": {
+      "exploratory": 569,
+      "moderate": 80,
+      "nearest_cases_only": 180
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 68,
+        "hit_at_1": 0.5588235294117647
+      },
+      "Calibrate": {
+        "queries": 2,
+        "hit_at_1": 0.0
+      },
+      "Diagnose": {
+        "queries": 47,
+        "hit_at_1": 0.7446808510638298
+      },
+      "Inspect": {
+        "queries": 42,
+        "hit_at_1": 0.023809523809523808
+      },
+      "Repair": {
+        "queries": 12,
+        "hit_at_1": 0.0
+      },
+      "Replace": {
+        "queries": 635,
+        "hit_at_1": 0.9559055118110236
+      },
+      "Service": {
+        "queries": 23,
+        "hit_at_1": 0.043478260869565216
+      }
+    },
+    "tau": 0.1,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "selective_canonical_bm25|cluster_expanded|tau=0.15|tau_selection": {
+    "queries": 829,
+    "hit_at_1": 0.8238841978287093,
+    "hit_at_3": 0.9601930036188179,
+    "hit_at_5": 0.985524728588661,
+    "mrr": 0.8906312826698833,
+    "ndcg_at_5": 0.9143714001563751,
+    "macro_action_family_recall": 0.35396211308170084,
+    "majority_family_baseline": {
+      "family": "Replace",
+      "hit_at_1": 0.7659831121833535,
+      "hit_at_3": 0.7659831121833535,
+      "mrr": 0.7659831121833535,
+      "macro_action_family_recall": 0.14285714285714285,
+      "family_counts": {
+        "Replace": 635,
+        "Adjust": 68,
+        "Diagnose": 47,
+        "Inspect": 42,
+        "Service": 23,
+        "Repair": 12,
+        "Calibrate": 2
+      }
+    },
+    "hit_at_1_minus_majority_baseline": 0.05790108564535579,
+    "macro_recall_minus_majority_baseline": 0.211104970224558,
+    "pattern_set_recall_at_3": 0.8250904704463209,
+    "pattern_set_recall_at_5": 0.8250904704463209,
+    "recorded_multi_family_set_recall_at_3": 0.9238037796542019,
+    "recorded_multi_family_set_recall_at_5": 0.96562123039807,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.6972255729794934,
+    "rung_distribution": {
+      "B": 80,
+      "C": 569,
+      "D": 180
+    },
+    "action_support_tier_distribution": {
+      "strong": 829
+    },
+    "evidence_tier_distribution": {
+      "exploratory": 569,
+      "moderate": 80,
+      "nearest_cases_only": 180
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 68,
+        "hit_at_1": 0.6323529411764706
+      },
+      "Calibrate": {
+        "queries": 2,
+        "hit_at_1": 0.0
+      },
+      "Diagnose": {
+        "queries": 47,
+        "hit_at_1": 0.7446808510638298
+      },
+      "Inspect": {
+        "queries": 42,
+        "hit_at_1": 0.023809523809523808
+      },
+      "Repair": {
+        "queries": 12,
+        "hit_at_1": 0.0
+      },
+      "Replace": {
+        "queries": 635,
+        "hit_at_1": 0.9464566929133859
+      },
+      "Service": {
+        "queries": 23,
+        "hit_at_1": 0.13043478260869565
+      }
+    },
+    "tau": 0.15,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "selective_canonical_bm25|cluster_expanded|tau=0.20|tau_selection": {
+    "queries": 829,
+    "hit_at_1": 0.8202653799758746,
+    "hit_at_3": 0.9613992762364294,
+    "hit_at_5": 0.985524728588661,
+    "mrr": 0.8884599919581825,
+    "ndcg_at_5": 0.9127506877856382,
+    "macro_action_family_recall": 0.3904997846669752,
+    "majority_family_baseline": {
+      "family": "Replace",
+      "hit_at_1": 0.7659831121833535,
+      "hit_at_3": 0.7659831121833535,
+      "mrr": 0.7659831121833535,
+      "macro_action_family_recall": 0.14285714285714285,
+      "family_counts": {
+        "Replace": 635,
+        "Adjust": 68,
+        "Diagnose": 47,
+        "Inspect": 42,
+        "Service": 23,
+        "Repair": 12,
+        "Calibrate": 2
+      }
+    },
+    "hit_at_1_minus_majority_baseline": 0.0542822677925211,
+    "macro_recall_minus_majority_baseline": 0.24764264180983236,
+    "pattern_set_recall_at_3": 0.8214716525934861,
+    "pattern_set_recall_at_5": 0.8214716525934861,
+    "recorded_multi_family_set_recall_at_3": 0.9250100522718134,
+    "recorded_multi_family_set_recall_at_5": 0.96562123039807,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.6972255729794934,
+    "rung_distribution": {
+      "B": 80,
+      "C": 569,
+      "D": 180
+    },
+    "action_support_tier_distribution": {
+      "strong": 829
+    },
+    "evidence_tier_distribution": {
+      "exploratory": 569,
+      "moderate": 80,
+      "nearest_cases_only": 180
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 68,
+        "hit_at_1": 0.6470588235294118
+      },
+      "Calibrate": {
+        "queries": 2,
+        "hit_at_1": 0.0
+      },
+      "Diagnose": {
+        "queries": 47,
+        "hit_at_1": 0.7659574468085106
+      },
+      "Inspect": {
+        "queries": 42,
+        "hit_at_1": 0.047619047619047616
+      },
+      "Repair": {
+        "queries": 12,
+        "hit_at_1": 0.16666666666666666
+      },
+      "Replace": {
+        "queries": 635,
+        "hit_at_1": 0.9322834645669291
+      },
+      "Service": {
+        "queries": 23,
+        "hit_at_1": 0.17391304347826086
+      }
+    },
+    "tau": 0.2,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "selective_canonical_bm25|cluster_expanded|tau=0.25|tau_selection": {
+    "queries": 829,
+    "hit_at_1": 0.8142340168878166,
+    "hit_at_3": 0.962605548854041,
+    "hit_at_5": 0.985524728588661,
+    "mrr": 0.8855448331322879,
+    "ndcg_at_5": 0.9106083140941833,
+    "macro_action_family_recall": 0.3893749252743993,
+    "majority_family_baseline": {
+      "family": "Replace",
+      "hit_at_1": 0.7659831121833535,
+      "hit_at_3": 0.7659831121833535,
+      "mrr": 0.7659831121833535,
+      "macro_action_family_recall": 0.14285714285714285,
+      "family_counts": {
+        "Replace": 635,
+        "Adjust": 68,
+        "Diagnose": 47,
+        "Inspect": 42,
+        "Service": 23,
+        "Repair": 12,
+        "Calibrate": 2
+      }
+    },
+    "hit_at_1_minus_majority_baseline": 0.04825090470446314,
+    "macro_recall_minus_majority_baseline": 0.24651778241725647,
+    "pattern_set_recall_at_3": 0.8166465621230398,
+    "pattern_set_recall_at_5": 0.8166465621230398,
+    "recorded_multi_family_set_recall_at_3": 0.9256131885806193,
+    "recorded_multi_family_set_recall_at_5": 0.96562123039807,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.6972255729794934,
+    "rung_distribution": {
+      "B": 80,
+      "C": 569,
+      "D": 180
+    },
+    "action_support_tier_distribution": {
+      "strong": 829
+    },
+    "evidence_tier_distribution": {
+      "exploratory": 569,
+      "moderate": 80,
+      "nearest_cases_only": 180
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 68,
+        "hit_at_1": 0.6470588235294118
+      },
+      "Calibrate": {
+        "queries": 2,
+        "hit_at_1": 0.0
+      },
+      "Diagnose": {
+        "queries": 47,
+        "hit_at_1": 0.7659574468085106
+      },
+      "Inspect": {
+        "queries": 42,
+        "hit_at_1": 0.047619047619047616
+      },
+      "Repair": {
+        "queries": 12,
+        "hit_at_1": 0.16666666666666666
+      },
+      "Replace": {
+        "queries": 635,
+        "hit_at_1": 0.9244094488188976
+      },
+      "Service": {
+        "queries": 23,
+        "hit_at_1": 0.17391304347826086
+      }
+    },
+    "tau": 0.25,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "selective_canonical_bm25|cluster_expanded|tau=0.30|tau_selection": {
+    "queries": 829,
+    "hit_at_1": 0.8130277442702051,
+    "hit_at_3": 0.9601930036188179,
+    "hit_at_5": 0.985524728588661,
+    "mrr": 0.8843385605146763,
+    "ndcg_at_5": 0.9096799948693043,
+    "macro_action_family_recall": 0.3992544676425277,
+    "majority_family_baseline": {
+      "family": "Replace",
+      "hit_at_1": 0.7659831121833535,
+      "hit_at_3": 0.7659831121833535,
+      "mrr": 0.7659831121833535,
+      "macro_action_family_recall": 0.14285714285714285,
+      "family_counts": {
+        "Replace": 635,
+        "Adjust": 68,
+        "Diagnose": 47,
+        "Inspect": 42,
+        "Service": 23,
+        "Repair": 12,
+        "Calibrate": 2
+      }
+    },
+    "hit_at_1_minus_majority_baseline": 0.04704463208685161,
+    "macro_recall_minus_majority_baseline": 0.25639732478538485,
+    "pattern_set_recall_at_3": 0.8154402895054282,
+    "pattern_set_recall_at_5": 0.8154402895054282,
+    "recorded_multi_family_set_recall_at_3": 0.9213912344189787,
+    "recorded_multi_family_set_recall_at_5": 0.9650180940892642,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.6972255729794934,
+    "rung_distribution": {
+      "B": 80,
+      "C": 569,
+      "D": 180
+    },
+    "action_support_tier_distribution": {
+      "strong": 829
+    },
+    "evidence_tier_distribution": {
+      "exploratory": 569,
+      "moderate": 80,
+      "nearest_cases_only": 180
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 68,
+        "hit_at_1": 0.6764705882352942
+      },
+      "Calibrate": {
+        "queries": 2,
+        "hit_at_1": 0.0
+      },
+      "Diagnose": {
+        "queries": 47,
+        "hit_at_1": 0.7659574468085106
+      },
+      "Inspect": {
+        "queries": 42,
+        "hit_at_1": 0.09523809523809523
+      },
+      "Repair": {
+        "queries": 12,
+        "hit_at_1": 0.16666666666666666
+      },
+      "Replace": {
+        "queries": 635,
+        "hit_at_1": 0.9165354330708662
+      },
+      "Service": {
+        "queries": 23,
+        "hit_at_1": 0.17391304347826086
+      }
+    },
+    "tau": 0.3,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "selective_canonical_bm25|cluster_expanded|tau=0.35|tau_selection": {
+    "queries": 829,
+    "hit_at_1": 0.8057901085645356,
+    "hit_at_3": 0.9577804583835947,
+    "hit_at_5": 0.985524728588661,
+    "mrr": 0.8797145154804987,
+    "ndcg_at_5": 0.9062098050300881,
+    "macro_action_family_recall": 0.43987213203111775,
+    "majority_family_baseline": {
+      "family": "Replace",
+      "hit_at_1": 0.7659831121833535,
+      "hit_at_3": 0.7659831121833535,
+      "mrr": 0.7659831121833535,
+      "macro_action_family_recall": 0.14285714285714285,
+      "family_counts": {
+        "Replace": 635,
+        "Adjust": 68,
+        "Diagnose": 47,
+        "Inspect": 42,
+        "Service": 23,
+        "Repair": 12,
+        "Calibrate": 2
+      }
+    },
+    "hit_at_1_minus_majority_baseline": 0.039806996381182125,
+    "macro_recall_minus_majority_baseline": 0.2970149891739749,
+    "pattern_set_recall_at_3": 0.8082026537997588,
+    "pattern_set_recall_at_5": 0.8118214716525934,
+    "recorded_multi_family_set_recall_at_3": 0.9203860072376358,
+    "recorded_multi_family_set_recall_at_5": 0.9650180940892642,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.6972255729794934,
+    "rung_distribution": {
+      "B": 80,
+      "C": 569,
+      "D": 180
+    },
+    "action_support_tier_distribution": {
+      "strong": 829
+    },
+    "evidence_tier_distribution": {
+      "exploratory": 569,
+      "moderate": 80,
+      "nearest_cases_only": 180
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 68,
+        "hit_at_1": 0.7058823529411765
+      },
+      "Calibrate": {
+        "queries": 2,
+        "hit_at_1": 0.0
+      },
+      "Diagnose": {
+        "queries": 47,
+        "hit_at_1": 0.7659574468085106
+      },
+      "Inspect": {
+        "queries": 42,
+        "hit_at_1": 0.11904761904761904
+      },
+      "Repair": {
+        "queries": 12,
+        "hit_at_1": 0.4166666666666667
+      },
+      "Replace": {
+        "queries": 635,
+        "hit_at_1": 0.8976377952755905
+      },
+      "Service": {
+        "queries": 23,
+        "hit_at_1": 0.17391304347826086
+      }
+    },
+    "tau": 0.35,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "selective_canonical_bm25|cluster_expanded|tau=0.40|tau_selection": {
+    "queries": 829,
+    "hit_at_1": 0.8021712907117008,
+    "hit_at_3": 0.9589867310012062,
+    "hit_at_5": 0.985524728588661,
+    "mrr": 0.8769400884599919,
+    "ndcg_at_5": 0.9041152817296596,
+    "macro_action_family_recall": 0.46790168003655747,
+    "majority_family_baseline": {
+      "family": "Replace",
+      "hit_at_1": 0.7659831121833535,
+      "hit_at_3": 0.7659831121833535,
+      "mrr": 0.7659831121833535,
+      "macro_action_family_recall": 0.14285714285714285,
+      "family_counts": {
+        "Replace": 635,
+        "Adjust": 68,
+        "Diagnose": 47,
+        "Inspect": 42,
+        "Service": 23,
+        "Repair": 12,
+        "Calibrate": 2
+      }
+    },
+    "hit_at_1_minus_majority_baseline": 0.036188178528347326,
+    "macro_recall_minus_majority_baseline": 0.3250445371794146,
+    "pattern_set_recall_at_3": 0.804583835946924,
+    "pattern_set_recall_at_5": 0.8082026537997588,
+    "recorded_multi_family_set_recall_at_3": 0.9209891435464415,
+    "recorded_multi_family_set_recall_at_5": 0.9650180940892642,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.6972255729794934,
+    "rung_distribution": {
+      "B": 80,
+      "C": 569,
+      "D": 180
+    },
+    "action_support_tier_distribution": {
+      "strong": 829
+    },
+    "evidence_tier_distribution": {
+      "exploratory": 569,
+      "moderate": 80,
+      "nearest_cases_only": 180
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 68,
+        "hit_at_1": 0.7205882352941176
+      },
+      "Calibrate": {
+        "queries": 2,
+        "hit_at_1": 0.0
+      },
+      "Diagnose": {
+        "queries": 47,
+        "hit_at_1": 0.7659574468085106
+      },
+      "Inspect": {
+        "queries": 42,
+        "hit_at_1": 0.14285714285714285
+      },
+      "Repair": {
+        "queries": 12,
+        "hit_at_1": 0.5
+      },
+      "Replace": {
+        "queries": 635,
+        "hit_at_1": 0.8850393700787401
+      },
+      "Service": {
+        "queries": 23,
+        "hit_at_1": 0.2608695652173913
+      }
+    },
+    "tau": 0.4,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "selective_canonical_bm25|cluster_expanded|tau=0.50|tau_selection": {
+    "queries": 829,
+    "hit_at_1": 0.7925211097708083,
+    "hit_at_3": 0.9457177322074789,
+    "hit_at_5": 0.9831121833534379,
+    "mrr": 0.8692400482509047,
+    "ndcg_at_5": 0.8973300055231099,
+    "macro_action_family_recall": 0.4790129948415299,
+    "majority_family_baseline": {
+      "family": "Replace",
+      "hit_at_1": 0.7659831121833535,
+      "hit_at_3": 0.7659831121833535,
+      "mrr": 0.7659831121833535,
+      "macro_action_family_recall": 0.14285714285714285,
+      "family_counts": {
+        "Replace": 635,
+        "Adjust": 68,
+        "Diagnose": 47,
+        "Inspect": 42,
+        "Service": 23,
+        "Repair": 12,
+        "Calibrate": 2
+      }
+    },
+    "hit_at_1_minus_majority_baseline": 0.026537997587454787,
+    "macro_recall_minus_majority_baseline": 0.3361558519843871,
+    "pattern_set_recall_at_3": 0.7961399276236429,
+    "pattern_set_recall_at_5": 0.8021712907117008,
+    "recorded_multi_family_set_recall_at_3": 0.912746280659429,
+    "recorded_multi_family_set_recall_at_5": 0.9616003216726979,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.6972255729794934,
+    "rung_distribution": {
+      "B": 80,
+      "C": 569,
+      "D": 180
+    },
+    "action_support_tier_distribution": {
+      "strong": 829
+    },
+    "evidence_tier_distribution": {
+      "exploratory": 569,
+      "moderate": 80,
+      "nearest_cases_only": 180
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 68,
+        "hit_at_1": 0.7058823529411765
+      },
+      "Calibrate": {
+        "queries": 2,
+        "hit_at_1": 0.0
+      },
+      "Diagnose": {
+        "queries": 47,
+        "hit_at_1": 0.7872340425531915
+      },
+      "Inspect": {
+        "queries": 42,
+        "hit_at_1": 0.14285714285714285
+      },
+      "Repair": {
+        "queries": 12,
+        "hit_at_1": 0.5
+      },
+      "Replace": {
+        "queries": 635,
+        "hit_at_1": 0.8692913385826772
+      },
+      "Service": {
+        "queries": 23,
+        "hit_at_1": 0.34782608695652173
+      }
+    },
+    "tau": 0.5,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "selective_canonical_bm25|representative_only|tau=0.15|ablation": {
+    "queries": 829,
+    "hit_at_1": 0.8202653799758746,
+    "hit_at_3": 0.9493365500603136,
+    "hit_at_5": 0.9806996381182147,
+    "mrr": 0.8846803377563329,
+    "ndcg_at_5": 0.9089422994584917,
+    "macro_action_family_recall": 0.3473009892004468,
+    "majority_family_baseline": {
+      "family": "Replace",
+      "hit_at_1": 0.7659831121833535,
+      "hit_at_3": 0.7659831121833535,
+      "mrr": 0.7659831121833535,
+      "macro_action_family_recall": 0.14285714285714285,
+      "family_counts": {
+        "Replace": 635,
+        "Adjust": 68,
+        "Diagnose": 47,
+        "Inspect": 42,
+        "Service": 23,
+        "Repair": 12,
+        "Calibrate": 2
+      }
+    },
+    "hit_at_1_minus_majority_baseline": 0.0542822677925211,
+    "macro_recall_minus_majority_baseline": 0.20444384634330393,
+    "pattern_set_recall_at_3": 0.8202653799758746,
+    "pattern_set_recall_at_5": 0.8202653799758746,
+    "recorded_multi_family_set_recall_at_3": 0.9187776437474869,
+    "recorded_multi_family_set_recall_at_5": 0.9613992762364294,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.6043425814234017,
+    "rung_distribution": {
+      "B": 80,
+      "C": 569,
+      "D": 180
+    },
+    "action_support_tier_distribution": {
+      "strong": 829
+    },
+    "evidence_tier_distribution": {
+      "exploratory": 569,
+      "moderate": 80,
+      "nearest_cases_only": 180
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 68,
+        "hit_at_1": 0.6323529411764706
+      },
+      "Calibrate": {
+        "queries": 2,
+        "hit_at_1": 0.0
+      },
+      "Diagnose": {
+        "queries": 47,
+        "hit_at_1": 0.7446808510638298
+      },
+      "Inspect": {
+        "queries": 42,
+        "hit_at_1": 0.023809523809523808
+      },
+      "Repair": {
+        "queries": 12,
+        "hit_at_1": 0.0
+      },
+      "Replace": {
+        "queries": 635,
+        "hit_at_1": 0.9433070866141732
+      },
+      "Service": {
+        "queries": 23,
+        "hit_at_1": 0.08695652173913043
+      }
+    },
+    "tau": 0.15,
+    "aggregation": "representative_only",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  }
+}

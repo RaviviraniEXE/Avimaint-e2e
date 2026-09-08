@@ -1,0 +1,31 @@
+{
+  "version": "selective_rq4_rq5_final",
+  "created_utc": "2026-09-08T21:14:42.261682+00:00",
+  "selected_retrieval_mode": "selective_canonical_bm25",
+  "selected_tau": 0.15,
+  "selected_aggregation": "cluster_expanded",
+  "reviewed_queries": 100,
+  "reviewed_pairs": 500,
+  "phase_a": {
+    "problem_relevance_hit_at_1": 0.92,
+    "problem_relevance_hit_at_3": 0.95,
+    "problem_relevance_hit_at_5": 0.97,
+    "mean_ndcg_problem_relevance_at_5": 0.9052829349145042,
+    "pairwise_relevant_or_partial_rate": 0.866,
+    "clearly_relevant_pair_rate": 0.574
+  },
+  "phase_b": {
+    "problem_relevant_pairs_revealed": 433,
+    "applicable_or_partial_rate_among_problem_relevant_pairs": 0.9884526558891455,
+    "clearly_applicable_rate_among_problem_relevant_pairs": 0.789838337182448,
+    "usable_historical_action_evidence_hit_at_1": 0.92,
+    "usable_historical_action_evidence_hit_at_3": 0.95,
+    "usable_historical_action_evidence_hit_at_5": 0.97
+  },
+  "carry_forward": {
+    "phase_a_pairs": 0,
+    "phase_b_pairs": 0
+  },
+  "interpretation": "Judgments concern relevance and usefulness of historical evidence; they do not validate technical correctness, safety, or regulatory applicability.",
+  "single_reviewer_limitation": "Inter-rater agreement cannot be estimated when one reviewer is used."
+}
