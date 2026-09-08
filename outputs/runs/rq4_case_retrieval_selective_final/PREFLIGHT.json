@@ -1,0 +1,52 @@
+{
+  "version": "selective_rq4_rq5_final",
+  "checked_utc": "2026-09-08T15:50:23.558902+00:00",
+  "status": "ready",
+  "training_performed": false,
+  "representation": "selective_byt5",
+  "query_features": "problem_normalized only",
+  "action_used_for_retrieval_or_clustering": false,
+  "superseded_test_locks_absent": true,
+  "source_qc": {
+    "records": 6169,
+    "unique_ids": 6169,
+    "problem_raw_mismatches": 0,
+    "action_raw_mismatches": 0,
+    "empty_problem_normalized": 0,
+    "empty_action_normalized": 0,
+    "protected_token_failures": 0,
+    "frozen_operational_rows_matched": 6169,
+    "semantic_representation_match": true,
+    "manifest_source_sha256": "34e6d8335db2869271b7fc735ff067fef438654ba79026bad9b1c6dc056c1c92",
+    "installed_source_sha256": "34e6d8335db2869271b7fc735ff067fef438654ba79026bad9b1c6dc056c1c92",
+    "source_byte_sha_matches_manifest": true,
+    "byte_hash_note": "A byte mismatch is accepted only because all 6,169 ordered Selective representations match the frozen operational index exactly.",
+    "problem_fallback_counts": {
+      "none": 5945,
+      "rules": 224
+    },
+    "action_fallback_counts": {
+      "none": 6091,
+      "rules": 77,
+      "raw": 1
+    }
+  },
+  "model": {
+    "model_path": "D:\\avimaint-e2e-research\\legacy_import\\maintenance-ie\\outputs\\spert_normalized\\selective_byt5\\save\\avimaint_spert_norm_selective_byt5\\2026-08-30_15-34-54_257127\\final_model",
+    "weight_path": "D:\\avimaint-e2e-research\\legacy_import\\maintenance-ie\\outputs\\spert_normalized\\selective_byt5\\save\\avimaint_spert_norm_selective_byt5\\2026-08-30_15-34-54_257127\\final_model\\model.safetensors",
+    "weight_sha256": "1f9c094789f591991ad26ca65ca1c36689b57ff0dd248cd30b4fc81b853b4ad9",
+    "types_path": "D:\\avimaint-e2e-research\\legacy_import\\maintenance-ie\\outputs\\spert_normalized\\selective_byt5\\avimaint_types.json",
+    "types_sha256": "3c4c68e2a6d38aa00061cdc9874e1fae4c078779d77f7daf5a7f22533cd0a9de",
+    "manifest_source_sha256": "34e6d8335db2869271b7fc735ff067fef438654ba79026bad9b1c6dc056c1c92",
+    "installed_source_sha256": "34e6d8335db2869271b7fc735ff067fef438654ba79026bad9b1c6dc056c1c92",
+    "registry_sha256": "be7be631f9cd66cb3b68f98674d310cc5e125fe4c53b75b229217ec0f1f2a149",
+    "operational_manifest_sha256": "325a2136ca4290ed5b4bdec4107f01c6704977c034dc3c6da9278b6702dbd103"
+  },
+  "preserved_raw_freeze": "D:\\avimaint-e2e-research\\outputs\\frozen\\final_rq4_rq5",
+  "preserved_raw_freeze_sums_sha256": "bff86b10885bf261a3ceb57a35f2e731aded9567a1cf530246d4effa3fa1a281",
+  "preserved_raw_freeze_verification": {
+    "directory": "D:\\avimaint-e2e-research\\outputs\\frozen\\final_rq4_rq5",
+    "files_checked": 30,
+    "sha256sums_sha256": "bff86b10885bf261a3ceb57a35f2e731aded9567a1cf530246d4effa3fa1a281"
+  }
+}

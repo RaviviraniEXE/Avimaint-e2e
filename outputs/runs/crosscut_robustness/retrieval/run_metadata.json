@@ -1,0 +1,7 @@
+{
+  "seed": 42,
+  "protocol": "frozen_train_candidates_frozen_test_queries",
+  "system": "rules_then_byt5",
+  "representation": "hybrid",
+  "multi_problem_policy": "qualitative only; no misleading single-label accuracy"
+}

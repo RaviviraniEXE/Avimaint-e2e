@@ -1,0 +1,44 @@
+{
+  "seed": 42,
+  "protocol": "frozen_train_candidates_frozen_test_queries",
+  "system": "rules_then_byt5",
+  "representation": "structure",
+  "queries": 1075,
+  "candidate_cases": 4555,
+  "conditions": [
+    {
+      "kind": "clean",
+      "value": 0.0
+    },
+    {
+      "kind": "truncation",
+      "value": 0.1
+    },
+    {
+      "kind": "truncation",
+      "value": 0.2
+    },
+    {
+      "kind": "truncation",
+      "value": 0.3
+    },
+    {
+      "kind": "spelling_noise",
+      "value": 0.05
+    },
+    {
+      "kind": "spelling_noise",
+      "value": 0.1
+    },
+    {
+      "kind": "missing_structure",
+      "value": 1.0
+    }
+  ],
+  "channel_isolation": "truncation and spelling_noise degrade the problem text only; structured fields remain those extracted from the clean text. missing_structure degrades the structured fields only.",
+  "multi_problem_policy": "qualitative only; no misleading single-label accuracy",
+  "saturated_metrics": [
+    "top1_action_family_agreement",
+    "macro_action_family_recall"
+  ]
+}

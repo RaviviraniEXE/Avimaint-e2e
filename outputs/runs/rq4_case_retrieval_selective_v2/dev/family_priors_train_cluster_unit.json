@@ -1,0 +1,13 @@
+{
+  "unit": "distinct TRAIN evidence-cluster/family supports",
+  "alpha": 1.0,
+  "priors": {
+    "Replace": 0.6088449978531558,
+    "Repair": 0.032632030914555604,
+    "Inspect": 0.08115070845856591,
+    "Adjust": 0.14426792614856163,
+    "Service": 0.04422498926577931,
+    "Diagnose": 0.0850150279089738,
+    "Calibrate": 0.0038643194504079004
+  }
+}

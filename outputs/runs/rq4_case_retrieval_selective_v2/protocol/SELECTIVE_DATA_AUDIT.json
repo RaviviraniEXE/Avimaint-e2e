@@ -1,0 +1,49 @@
+{
+  "version": "selective_rq4_rq5_v2",
+  "created_utc": "2026-09-08T08:30:56.001841+00:00",
+  "status": "complete",
+  "source_qc": {
+    "records": 6169,
+    "unique_ids": 6169,
+    "problem_raw_mismatches": 0,
+    "action_raw_mismatches": 0,
+    "empty_problem_normalized": 0,
+    "empty_action_normalized": 0,
+    "protected_token_failures": 0,
+    "frozen_operational_rows_matched": 6169,
+    "semantic_representation_match": true,
+    "manifest_source_sha256": "34e6d8335db2869271b7fc735ff067fef438654ba79026bad9b1c6dc056c1c92",
+    "installed_source_sha256": "34e6d8335db2869271b7fc735ff067fef438654ba79026bad9b1c6dc056c1c92",
+    "source_byte_sha_matches_manifest": true,
+    "byte_hash_note": "A byte mismatch is accepted only because all 6,169 ordered Selective representations match the frozen operational index exactly.",
+    "problem_fallback_counts": {
+      "none": 5945,
+      "rules": 224
+    },
+    "action_fallback_counts": {
+      "none": 6091,
+      "rules": 77,
+      "raw": 1
+    }
+  },
+  "records": 6169,
+  "unique_ids": 6169,
+  "split_counts": {
+    "train": 4319,
+    "dev": 925,
+    "test": 925
+  },
+  "evidence_clusters": 3363,
+  "leakage_groups": 1820,
+  "action_family_disagreements_raw_vs_normalized": 265,
+  "action_family_source_counts": {
+    "normalized": 6168,
+    "raw_fallback": 1
+  },
+  "records_with_multiple_detected_action_families": 904,
+  "outcome_disagreements_raw_vs_normalized": 2,
+  "cases_sha256": "e1062b5225a4908ff58d1d084547e8d7eedf1fa756fb21805967536dc8019054",
+  "protocol_sha256": "618bef942721197913aee6b10405fe815d8f266fa5b4a08fd8ede09be5246c3b",
+  "preregistered_policy_sha256": "48c72551f55ad67d0971c3576097ff08ad5cb3b20c9875c61e5be0d2096980b8",
+  "preserved_raw_freeze_sums_sha256": "bff86b10885bf261a3ceb57a35f2e731aded9567a1cf530246d4effa3fa1a281"
+}

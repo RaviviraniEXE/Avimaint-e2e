@@ -1,0 +1,63 @@
+{
+  "version": "selective_rq4_rq5_final",
+  "created_utc": "2026-09-08T15:50:56.428279+00:00",
+  "status": "frozen_before_selective_dev",
+  "representation": "selective_byt5",
+  "near_duplicate_similarity_threshold": 0.87,
+  "near_duplicate_threshold_rule": "Fixed at cosine similarity >= 0.87 on normalized-problem character 3-5-gram TF-IDF; connected components are formed by transitive union-find.",
+  "oversized_leakage_group_policy": "Any leakage group above 5% of all records is assigned wholly to TRAIN before allocation; remaining groups are deterministically balanced and exact-size repair moves whole groups only.",
+  "split_method": "fixed 0.87 whole leakage groups; groups above 5% forced to TRAIN; remaining groups deterministically family-balanced; whole-group exact-size repair",
+  "action_family_used_for_split_stratification_only": true,
+  "supersedes_v2_before_v2_test_opened": true,
+  "retrieval_modes": [
+    "selective_surface_bm25",
+    "selective_canonical_bm25",
+    "selective_tfidf",
+    "structure",
+    "weighted_hybrid",
+    "rrf_hybrid"
+  ],
+  "retrieval_depth": 50,
+  "operational_aggregation": "cluster_expanded",
+  "aggregation_ablation": "representative_only",
+  "family_prior_unit": "distinct TRAIN evidence-cluster/family supports",
+  "family_prior_smoothing_alpha": 1.0,
+  "tau_grid": [
+    0.0,
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.5
+  ],
+  "mode_selection_rule": "At tau=0 with cluster expansion: max macro action-family recall, then MRR, then Hit@1.",
+  "tau_selection_rule": "Eligible when Hit@1 and Hit@3 are each no more than 0.01 below tau=0 for the selected mode; among eligible values maximize macro recall, then MRR, then Hit@1, then prefer smaller tau.",
+  "dev_hit_selection_tolerance_absolute": 0.01,
+  "dev_hit_selection_tolerance_note": "Deterministic DEV selection constraint; not a formal inferential non-inferiority test.",
+  "test_policy": "Select mode and tau on DEV only; open Selective TEST exactly once; no post-TEST tuning.",
+  "query_features": "problem_normalized and problem-only Selective SpERT structure",
+  "action_used_for_retrieval_or_clustering": false,
+  "action_evidence_policy": "After problem-only retrieval, reopen all TRAIN members of retrieved evidence clusters; each cluster contributes at most one vote per action family and per action pattern.",
+  "action_pattern": "action family + canonical component anchor + canonical fault anchor",
+  "outcome_policy": "positive and unknown support corroboration; negative and mixed remain visible but never count as positive support.",
+  "visibility_policy": "Single-cluster support is always shown as Limited historical evidence; weak queries show Exploratory or Nearest cases only.",
+  "primary_metrics": [
+    "Hit@1",
+    "Hit@3",
+    "MRR",
+    "macro action-family recall"
+  ],
+  "additional_metrics": [
+    "majority-family baseline",
+    "system-minus-majority improvement",
+    "pattern-set recall@3",
+    "pattern-set recall@5",
+    "rung distribution",
+    "answer rate",
+    "paired bootstrap CI"
+  ]
+}

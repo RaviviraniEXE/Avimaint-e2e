@@ -1,0 +1,903 @@
+{
+  "selective_surface_bm25|cluster_expanded|tau=0.00|mode_selection": {
+    "queries": 918,
+    "hit_at_1": 0.9760348583877996,
+    "hit_at_3": 0.9945533769063181,
+    "hit_at_5": 0.9989106753812637,
+    "mrr": 0.9851125635439361,
+    "ndcg_at_5": 0.9885969539956515,
+    "macro_action_family_recall": 0.26666666666666666,
+    "pattern_set_recall_at_3": 0.9760348583877996,
+    "pattern_set_recall_at_5": 0.9760348583877996,
+    "recorded_multi_family_set_recall_at_3": 0.9787581699346405,
+    "recorded_multi_family_set_recall_at_5": 0.9851125635439361,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.8954248366013072,
+    "rung_distribution": {
+      "B": 118,
+      "C": 774,
+      "D": 26
+    },
+    "evidence_tier_distribution": {
+      "strong": 918
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 10,
+        "hit_at_1": 0.1
+      },
+      "Diagnose": {
+        "queries": 4,
+        "hit_at_1": 0.5
+      },
+      "Inspect": {
+        "queries": 7,
+        "hit_at_1": 0.0
+      },
+      "Repair": {
+        "queries": 1,
+        "hit_at_1": 0.0
+      },
+      "Replace": {
+        "queries": 893,
+        "hit_at_1": 1.0
+      },
+      "Service": {
+        "queries": 3,
+        "hit_at_1": 0.0
+      }
+    },
+    "tau": 0.0,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "selective_canonical_bm25|cluster_expanded|tau=0.00|mode_selection": {
+    "queries": 918,
+    "hit_at_1": 0.9760348583877996,
+    "hit_at_3": 0.9923747276688453,
+    "hit_at_5": 0.9967320261437909,
+    "mrr": 0.9843863471314451,
+    "ndcg_at_5": 0.987507629376915,
+    "macro_action_family_recall": 0.26666666666666666,
+    "pattern_set_recall_at_3": 0.9760348583877996,
+    "pattern_set_recall_at_5": 0.9760348583877996,
+    "recorded_multi_family_set_recall_at_3": 0.9778503994190269,
+    "recorded_multi_family_set_recall_at_5": 0.9845679012345678,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.8976034858387799,
+    "rung_distribution": {
+      "B": 118,
+      "C": 764,
+      "D": 36
+    },
+    "evidence_tier_distribution": {
+      "strong": 918
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 10,
+        "hit_at_1": 0.1
+      },
+      "Diagnose": {
+        "queries": 4,
+        "hit_at_1": 0.5
+      },
+      "Inspect": {
+        "queries": 7,
+        "hit_at_1": 0.0
+      },
+      "Repair": {
+        "queries": 1,
+        "hit_at_1": 0.0
+      },
+      "Replace": {
+        "queries": 893,
+        "hit_at_1": 1.0
+      },
+      "Service": {
+        "queries": 3,
+        "hit_at_1": 0.0
+      }
+    },
+    "tau": 0.0,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "selective_tfidf|cluster_expanded|tau=0.00|mode_selection": {
+    "queries": 918,
+    "hit_at_1": 0.9760348583877996,
+    "hit_at_3": 0.9912854030501089,
+    "hit_at_5": 0.9934640522875817,
+    "mrr": 0.9832970225127089,
+    "ndcg_at_5": 0.9858820489088125,
+    "macro_action_family_recall": 0.26666666666666666,
+    "pattern_set_recall_at_3": 0.9760348583877996,
+    "pattern_set_recall_at_5": 0.9760348583877996,
+    "recorded_multi_family_set_recall_at_3": 0.9776688453159041,
+    "recorded_multi_family_set_recall_at_5": 0.9809368191721133,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.7254901960784313,
+    "rung_distribution": {
+      "B": 118,
+      "C": 789,
+      "D": 11
+    },
+    "evidence_tier_distribution": {
+      "strong": 918
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 10,
+        "hit_at_1": 0.1
+      },
+      "Diagnose": {
+        "queries": 4,
+        "hit_at_1": 0.5
+      },
+      "Inspect": {
+        "queries": 7,
+        "hit_at_1": 0.0
+      },
+      "Repair": {
+        "queries": 1,
+        "hit_at_1": 0.0
+      },
+      "Replace": {
+        "queries": 893,
+        "hit_at_1": 1.0
+      },
+      "Service": {
+        "queries": 3,
+        "hit_at_1": 0.0
+      }
+    },
+    "tau": 0.0,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "structure|cluster_expanded|tau=0.00|mode_selection": {
+    "queries": 918,
+    "hit_at_1": 0.9771241830065359,
+    "hit_at_3": 0.9891067538126361,
+    "hit_at_5": 0.9945533769063181,
+    "mrr": 0.983641975308642,
+    "ndcg_at_5": 0.9860788497348002,
+    "macro_action_family_recall": 0.30833333333333335,
+    "pattern_set_recall_at_3": 0.9782135076252724,
+    "pattern_set_recall_at_5": 0.9814814814814815,
+    "recorded_multi_family_set_recall_at_3": 0.9787581699346405,
+    "recorded_multi_family_set_recall_at_5": 0.9872912127814087,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.9847494553376906,
+    "rung_distribution": {
+      "B": 105,
+      "C": 802,
+      "D": 11
+    },
+    "evidence_tier_distribution": {
+      "strong": 918
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 10,
+        "hit_at_1": 0.1
+      },
+      "Diagnose": {
+        "queries": 4,
+        "hit_at_1": 0.75
+      },
+      "Inspect": {
+        "queries": 7,
+        "hit_at_1": 0.0
+      },
+      "Repair": {
+        "queries": 1,
+        "hit_at_1": 0.0
+      },
+      "Replace": {
+        "queries": 893,
+        "hit_at_1": 1.0
+      },
+      "Service": {
+        "queries": 3,
+        "hit_at_1": 0.0
+      }
+    },
+    "tau": 0.0,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "weighted_hybrid|cluster_expanded|tau=0.00|mode_selection": {
+    "queries": 918,
+    "hit_at_1": 0.9771241830065359,
+    "hit_at_3": 0.9923747276688453,
+    "hit_at_5": 0.9945533769063181,
+    "mrr": 0.9843863471314451,
+    "ndcg_at_5": 0.9869713735275489,
+    "macro_action_family_recall": 0.30833333333333335,
+    "pattern_set_recall_at_3": 0.9771241830065359,
+    "pattern_set_recall_at_5": 0.9782135076252724,
+    "recorded_multi_family_set_recall_at_3": 0.9778503994190269,
+    "recorded_multi_family_set_recall_at_5": 0.9800290486564996,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.8790849673202614,
+    "rung_distribution": {
+      "B": 118,
+      "C": 789,
+      "D": 11
+    },
+    "evidence_tier_distribution": {
+      "strong": 918
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 10,
+        "hit_at_1": 0.1
+      },
+      "Diagnose": {
+        "queries": 4,
+        "hit_at_1": 0.75
+      },
+      "Inspect": {
+        "queries": 7,
+        "hit_at_1": 0.0
+      },
+      "Repair": {
+        "queries": 1,
+        "hit_at_1": 0.0
+      },
+      "Replace": {
+        "queries": 893,
+        "hit_at_1": 1.0
+      },
+      "Service": {
+        "queries": 3,
+        "hit_at_1": 0.0
+      }
+    },
+    "tau": 0.0,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "rrf_hybrid|cluster_expanded|tau=0.00|mode_selection": {
+    "queries": 918,
+    "hit_at_1": 0.9760348583877996,
+    "hit_at_3": 0.9923747276688453,
+    "hit_at_5": 0.9945533769063181,
+    "mrr": 0.9836601307189542,
+    "ndcg_at_5": 0.9864267112181806,
+    "macro_action_family_recall": 0.26666666666666666,
+    "pattern_set_recall_at_3": 0.9760348583877996,
+    "pattern_set_recall_at_5": 0.9760348583877996,
+    "recorded_multi_family_set_recall_at_3": 0.9796659404502541,
+    "recorded_multi_family_set_recall_at_5": 0.9827523602033406,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.7930283224400871,
+    "rung_distribution": {
+      "B": 118,
+      "C": 789,
+      "D": 11
+    },
+    "evidence_tier_distribution": {
+      "strong": 918
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 10,
+        "hit_at_1": 0.1
+      },
+      "Diagnose": {
+        "queries": 4,
+        "hit_at_1": 0.5
+      },
+      "Inspect": {
+        "queries": 7,
+        "hit_at_1": 0.0
+      },
+      "Repair": {
+        "queries": 1,
+        "hit_at_1": 0.0
+      },
+      "Replace": {
+        "queries": 893,
+        "hit_at_1": 1.0
+      },
+      "Service": {
+        "queries": 3,
+        "hit_at_1": 0.0
+      }
+    },
+    "tau": 0.0,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "weighted_hybrid|cluster_expanded|tau=0.00|tau_selection": {
+    "queries": 918,
+    "hit_at_1": 0.9771241830065359,
+    "hit_at_3": 0.9923747276688453,
+    "hit_at_5": 0.9945533769063181,
+    "mrr": 0.9843863471314451,
+    "ndcg_at_5": 0.9869713735275489,
+    "macro_action_family_recall": 0.30833333333333335,
+    "pattern_set_recall_at_3": 0.9771241830065359,
+    "pattern_set_recall_at_5": 0.9782135076252724,
+    "recorded_multi_family_set_recall_at_3": 0.9778503994190269,
+    "recorded_multi_family_set_recall_at_5": 0.9800290486564996,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.8790849673202614,
+    "rung_distribution": {
+      "B": 118,
+      "C": 789,
+      "D": 11
+    },
+    "evidence_tier_distribution": {
+      "strong": 918
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 10,
+        "hit_at_1": 0.1
+      },
+      "Diagnose": {
+        "queries": 4,
+        "hit_at_1": 0.75
+      },
+      "Inspect": {
+        "queries": 7,
+        "hit_at_1": 0.0
+      },
+      "Repair": {
+        "queries": 1,
+        "hit_at_1": 0.0
+      },
+      "Replace": {
+        "queries": 893,
+        "hit_at_1": 1.0
+      },
+      "Service": {
+        "queries": 3,
+        "hit_at_1": 0.0
+      }
+    },
+    "tau": 0.0,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "weighted_hybrid|cluster_expanded|tau=0.05|tau_selection": {
+    "queries": 918,
+    "hit_at_1": 0.9771241830065359,
+    "hit_at_3": 0.9923747276688453,
+    "hit_at_5": 0.9945533769063181,
+    "mrr": 0.9842047930283224,
+    "ndcg_at_5": 0.9868287485236584,
+    "macro_action_family_recall": 0.30833333333333335,
+    "pattern_set_recall_at_3": 0.9771241830065359,
+    "pattern_set_recall_at_5": 0.9771241830065359,
+    "recorded_multi_family_set_recall_at_3": 0.9778503994190269,
+    "recorded_multi_family_set_recall_at_5": 0.9800290486564996,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.8790849673202614,
+    "rung_distribution": {
+      "B": 118,
+      "C": 789,
+      "D": 11
+    },
+    "evidence_tier_distribution": {
+      "strong": 918
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 10,
+        "hit_at_1": 0.1
+      },
+      "Diagnose": {
+        "queries": 4,
+        "hit_at_1": 0.75
+      },
+      "Inspect": {
+        "queries": 7,
+        "hit_at_1": 0.0
+      },
+      "Repair": {
+        "queries": 1,
+        "hit_at_1": 0.0
+      },
+      "Replace": {
+        "queries": 893,
+        "hit_at_1": 1.0
+      },
+      "Service": {
+        "queries": 3,
+        "hit_at_1": 0.0
+      }
+    },
+    "tau": 0.05,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "weighted_hybrid|cluster_expanded|tau=0.10|tau_selection": {
+    "queries": 918,
+    "hit_at_1": 0.9782135076252724,
+    "hit_at_3": 0.9923747276688453,
+    "hit_at_5": 0.9945533769063181,
+    "mrr": 0.9847494553376906,
+    "ndcg_at_5": 0.9872307858291361,
+    "macro_action_family_recall": 0.47500000000000003,
+    "pattern_set_recall_at_3": 0.9782135076252724,
+    "pattern_set_recall_at_5": 0.9782135076252724,
+    "recorded_multi_family_set_recall_at_3": 0.9778503994190269,
+    "recorded_multi_family_set_recall_at_5": 0.9800290486564996,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.8790849673202614,
+    "rung_distribution": {
+      "B": 118,
+      "C": 789,
+      "D": 11
+    },
+    "evidence_tier_distribution": {
+      "strong": 918
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 10,
+        "hit_at_1": 0.1
+      },
+      "Diagnose": {
+        "queries": 4,
+        "hit_at_1": 0.75
+      },
+      "Inspect": {
+        "queries": 7,
+        "hit_at_1": 0.0
+      },
+      "Repair": {
+        "queries": 1,
+        "hit_at_1": 1.0
+      },
+      "Replace": {
+        "queries": 893,
+        "hit_at_1": 1.0
+      },
+      "Service": {
+        "queries": 3,
+        "hit_at_1": 0.0
+      }
+    },
+    "tau": 0.1,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "weighted_hybrid|cluster_expanded|tau=0.15|tau_selection": {
+    "queries": 918,
+    "hit_at_1": 0.9782135076252724,
+    "hit_at_3": 0.9923747276688453,
+    "hit_at_5": 0.9945533769063181,
+    "mrr": 0.9847494553376906,
+    "ndcg_at_5": 0.9872307858291361,
+    "macro_action_family_recall": 0.47500000000000003,
+    "pattern_set_recall_at_3": 0.9782135076252724,
+    "pattern_set_recall_at_5": 0.9782135076252724,
+    "recorded_multi_family_set_recall_at_3": 0.9778503994190269,
+    "recorded_multi_family_set_recall_at_5": 0.9800290486564996,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.8790849673202614,
+    "rung_distribution": {
+      "B": 118,
+      "C": 789,
+      "D": 11
+    },
+    "evidence_tier_distribution": {
+      "strong": 918
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 10,
+        "hit_at_1": 0.1
+      },
+      "Diagnose": {
+        "queries": 4,
+        "hit_at_1": 0.75
+      },
+      "Inspect": {
+        "queries": 7,
+        "hit_at_1": 0.0
+      },
+      "Repair": {
+        "queries": 1,
+        "hit_at_1": 1.0
+      },
+      "Replace": {
+        "queries": 893,
+        "hit_at_1": 1.0
+      },
+      "Service": {
+        "queries": 3,
+        "hit_at_1": 0.0
+      }
+    },
+    "tau": 0.15,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "weighted_hybrid|cluster_expanded|tau=0.20|tau_selection": {
+    "queries": 918,
+    "hit_at_1": 0.9771241830065359,
+    "hit_at_3": 0.9923747276688453,
+    "hit_at_5": 0.9945533769063181,
+    "mrr": 0.9842047930283224,
+    "ndcg_at_5": 0.9868287485236584,
+    "macro_action_family_recall": 0.4748133631952221,
+    "pattern_set_recall_at_3": 0.9771241830065359,
+    "pattern_set_recall_at_5": 0.9771241830065359,
+    "recorded_multi_family_set_recall_at_3": 0.9778503994190269,
+    "recorded_multi_family_set_recall_at_5": 0.9800290486564996,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.8790849673202614,
+    "rung_distribution": {
+      "B": 118,
+      "C": 789,
+      "D": 11
+    },
+    "evidence_tier_distribution": {
+      "strong": 918
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 10,
+        "hit_at_1": 0.1
+      },
+      "Diagnose": {
+        "queries": 4,
+        "hit_at_1": 0.75
+      },
+      "Inspect": {
+        "queries": 7,
+        "hit_at_1": 0.0
+      },
+      "Repair": {
+        "queries": 1,
+        "hit_at_1": 1.0
+      },
+      "Replace": {
+        "queries": 893,
+        "hit_at_1": 0.9988801791713325
+      },
+      "Service": {
+        "queries": 3,
+        "hit_at_1": 0.0
+      }
+    },
+    "tau": 0.2,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "weighted_hybrid|cluster_expanded|tau=0.25|tau_selection": {
+    "queries": 918,
+    "hit_at_1": 0.9771241830065359,
+    "hit_at_3": 0.9923747276688453,
+    "hit_at_5": 0.9945533769063181,
+    "mrr": 0.9843863471314451,
+    "ndcg_at_5": 0.9869713735275489,
+    "macro_action_family_recall": 0.4748133631952221,
+    "pattern_set_recall_at_3": 0.9771241830065359,
+    "pattern_set_recall_at_5": 0.9782135076252724,
+    "recorded_multi_family_set_recall_at_3": 0.9778503994190269,
+    "recorded_multi_family_set_recall_at_5": 0.9800290486564996,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.8790849673202614,
+    "rung_distribution": {
+      "B": 118,
+      "C": 789,
+      "D": 11
+    },
+    "evidence_tier_distribution": {
+      "strong": 918
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 10,
+        "hit_at_1": 0.1
+      },
+      "Diagnose": {
+        "queries": 4,
+        "hit_at_1": 0.75
+      },
+      "Inspect": {
+        "queries": 7,
+        "hit_at_1": 0.0
+      },
+      "Repair": {
+        "queries": 1,
+        "hit_at_1": 1.0
+      },
+      "Replace": {
+        "queries": 893,
+        "hit_at_1": 0.9988801791713325
+      },
+      "Service": {
+        "queries": 3,
+        "hit_at_1": 0.0
+      }
+    },
+    "tau": 0.25,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "weighted_hybrid|cluster_expanded|tau=0.30|tau_selection": {
+    "queries": 918,
+    "hit_at_1": 0.9771241830065359,
+    "hit_at_3": 0.9923747276688453,
+    "hit_at_5": 0.9945533769063181,
+    "mrr": 0.9843318809005084,
+    "ndcg_at_5": 0.9869236352368747,
+    "macro_action_family_recall": 0.4748133631952221,
+    "pattern_set_recall_at_3": 0.9771241830065359,
+    "pattern_set_recall_at_5": 0.9782135076252724,
+    "recorded_multi_family_set_recall_at_3": 0.9778503994190269,
+    "recorded_multi_family_set_recall_at_5": 0.9800290486564996,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.8790849673202614,
+    "rung_distribution": {
+      "B": 118,
+      "C": 789,
+      "D": 11
+    },
+    "evidence_tier_distribution": {
+      "strong": 918
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 10,
+        "hit_at_1": 0.1
+      },
+      "Diagnose": {
+        "queries": 4,
+        "hit_at_1": 0.75
+      },
+      "Inspect": {
+        "queries": 7,
+        "hit_at_1": 0.0
+      },
+      "Repair": {
+        "queries": 1,
+        "hit_at_1": 1.0
+      },
+      "Replace": {
+        "queries": 893,
+        "hit_at_1": 0.9988801791713325
+      },
+      "Service": {
+        "queries": 3,
+        "hit_at_1": 0.0
+      }
+    },
+    "tau": 0.3,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "weighted_hybrid|cluster_expanded|tau=0.35|tau_selection": {
+    "queries": 918,
+    "hit_at_1": 0.9760348583877996,
+    "hit_at_3": 0.9923747276688453,
+    "hit_at_5": 0.9945533769063181,
+    "mrr": 0.9837872185911402,
+    "ndcg_at_5": 0.986521597931397,
+    "macro_action_family_recall": 0.47462672639044423,
+    "pattern_set_recall_at_3": 0.9771241830065359,
+    "pattern_set_recall_at_5": 0.9782135076252724,
+    "recorded_multi_family_set_recall_at_3": 0.9778503994190269,
+    "recorded_multi_family_set_recall_at_5": 0.9800290486564996,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.8790849673202614,
+    "rung_distribution": {
+      "B": 118,
+      "C": 789,
+      "D": 11
+    },
+    "evidence_tier_distribution": {
+      "strong": 918
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 10,
+        "hit_at_1": 0.1
+      },
+      "Diagnose": {
+        "queries": 4,
+        "hit_at_1": 0.75
+      },
+      "Inspect": {
+        "queries": 7,
+        "hit_at_1": 0.0
+      },
+      "Repair": {
+        "queries": 1,
+        "hit_at_1": 1.0
+      },
+      "Replace": {
+        "queries": 893,
+        "hit_at_1": 0.9977603583426652
+      },
+      "Service": {
+        "queries": 3,
+        "hit_at_1": 0.0
+      }
+    },
+    "tau": 0.35,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "weighted_hybrid|cluster_expanded|tau=0.40|tau_selection": {
+    "queries": 918,
+    "hit_at_1": 0.9760348583877996,
+    "hit_at_3": 0.9923747276688453,
+    "hit_at_5": 0.9945533769063181,
+    "mrr": 0.9838416848220769,
+    "ndcg_at_5": 0.9865693362220712,
+    "macro_action_family_recall": 0.47462672639044423,
+    "pattern_set_recall_at_3": 0.9771241830065359,
+    "pattern_set_recall_at_5": 0.9782135076252724,
+    "recorded_multi_family_set_recall_at_3": 0.9778503994190269,
+    "recorded_multi_family_set_recall_at_5": 0.9800290486564996,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.8790849673202614,
+    "rung_distribution": {
+      "B": 118,
+      "C": 789,
+      "D": 11
+    },
+    "evidence_tier_distribution": {
+      "strong": 918
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 10,
+        "hit_at_1": 0.1
+      },
+      "Diagnose": {
+        "queries": 4,
+        "hit_at_1": 0.75
+      },
+      "Inspect": {
+        "queries": 7,
+        "hit_at_1": 0.0
+      },
+      "Repair": {
+        "queries": 1,
+        "hit_at_1": 1.0
+      },
+      "Replace": {
+        "queries": 893,
+        "hit_at_1": 0.9977603583426652
+      },
+      "Service": {
+        "queries": 3,
+        "hit_at_1": 0.0
+      }
+    },
+    "tau": 0.4,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "weighted_hybrid|cluster_expanded|tau=0.50|tau_selection": {
+    "queries": 918,
+    "hit_at_1": 0.9749455337690632,
+    "hit_at_3": 0.9934640522875817,
+    "hit_at_5": 0.9945533769063181,
+    "mrr": 0.9833877995642701,
+    "ndcg_at_5": 0.9862428146485397,
+    "macro_action_family_recall": 0.47444008958566625,
+    "pattern_set_recall_at_3": 0.9771241830065359,
+    "pattern_set_recall_at_5": 0.9782135076252724,
+    "recorded_multi_family_set_recall_at_3": 0.9789397240377632,
+    "recorded_multi_family_set_recall_at_5": 0.9800290486564996,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.8790849673202614,
+    "rung_distribution": {
+      "B": 118,
+      "C": 789,
+      "D": 11
+    },
+    "evidence_tier_distribution": {
+      "strong": 918
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 10,
+        "hit_at_1": 0.1
+      },
+      "Diagnose": {
+        "queries": 4,
+        "hit_at_1": 0.75
+      },
+      "Inspect": {
+        "queries": 7,
+        "hit_at_1": 0.0
+      },
+      "Repair": {
+        "queries": 1,
+        "hit_at_1": 1.0
+      },
+      "Replace": {
+        "queries": 893,
+        "hit_at_1": 0.9966405375139977
+      },
+      "Service": {
+        "queries": 3,
+        "hit_at_1": 0.0
+      }
+    },
+    "tau": 0.5,
+    "aggregation": "cluster_expanded",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  },
+  "weighted_hybrid|representative_only|tau=0.10|ablation": {
+    "queries": 918,
+    "hit_at_1": 0.9782135076252724,
+    "hit_at_3": 0.9901960784313726,
+    "hit_at_5": 0.9912854030501089,
+    "mrr": 0.9839324618736384,
+    "ndcg_at_5": 0.9858149396368682,
+    "macro_action_family_recall": 0.47500000000000003,
+    "pattern_set_recall_at_3": 0.9782135076252724,
+    "pattern_set_recall_at_5": 0.9793028322440087,
+    "recorded_multi_family_set_recall_at_3": 0.9753086419753085,
+    "recorded_multi_family_set_recall_at_5": 0.976397966594045,
+    "answer_rate": 1.0,
+    "single_support_result_rate": 0.0,
+    "queries_with_single_support_alternative_rate": 0.6034858387799564,
+    "rung_distribution": {
+      "B": 118,
+      "C": 789,
+      "D": 11
+    },
+    "evidence_tier_distribution": {
+      "strong": 918
+    },
+    "per_family": {
+      "Adjust": {
+        "queries": 10,
+        "hit_at_1": 0.1
+      },
+      "Diagnose": {
+        "queries": 4,
+        "hit_at_1": 0.75
+      },
+      "Inspect": {
+        "queries": 7,
+        "hit_at_1": 0.0
+      },
+      "Repair": {
+        "queries": 1,
+        "hit_at_1": 1.0
+      },
+      "Replace": {
+        "queries": 893,
+        "hit_at_1": 1.0
+      },
+      "Service": {
+        "queries": 3,
+        "hit_at_1": 0.0
+      }
+    },
+    "tau": 0.1,
+    "aggregation": "representative_only",
+    "interpretation": "Agreement with the recorded historical action family, not technical correctness."
+  }
+}
