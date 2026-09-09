@@ -1,0 +1,3 @@
+# Preserve the byte identity of frozen release artifacts across operating systems.
+dashboard/data/selective_cases_final.csv text eol=crlf
+dashboard/data/predictions_problem_only_selective.jsonl text eol=lf
