@@ -1,0 +1,223 @@
+{
+  "version": "selective_rq4_rq5_final",
+  "created_utc": "2026-09-08T16:47:55.571557+00:00",
+  "representation": "selective_byt5",
+  "selected_retrieval_mode": "selective_canonical_bm25",
+  "selected_tau": 0.15,
+  "selected_aggregation": "cluster_expanded",
+  "calibration_population": "DEV only",
+  "evaluation_population": "locked TEST",
+  "run_identity": {
+    "cases_sha256": "ad5b5771ae4c41b60402128fc9c99c6e59d87f4af332864a205106a85db30be2",
+    "protocol_sha256": "ffeac9d75e5741eede355617402ce85ba95fbdb66d53ab1bfb85c7079fd6861f",
+    "preregistered_policy_sha256": "131f53f43e06b4f1b119089d61d6a236618dbcce1f529db2f1568beb1b99e77f",
+    "predictions_sha256": "bb5dcdd7246c1e3220f1fefc6f092591f99d6fb3874ac1a258bb9734bb7a8a15",
+    "prediction_manifest_sha256": "3558826f2e0b45ea96983f6380442f5638fea4f893de65730b1a15a2af5fac79"
+  },
+  "ece_10_bins": 0.05052001826083756,
+  "brier_score": 0.11951830871827923,
+  "risk_coverage": [
+    {
+      "coverage": 0.1,
+      "agreement_accuracy": 0.9879518072289156,
+      "risk": 0.012048192771084376
+    },
+    {
+      "coverage": 0.2,
+      "agreement_accuracy": 0.9939759036144579,
+      "risk": 0.0060240963855421326
+    },
+    {
+      "coverage": 0.30000000000000004,
+      "agreement_accuracy": 0.9959839357429718,
+      "risk": 0.004016064257028162
+    },
+    {
+      "coverage": 0.4,
+      "agreement_accuracy": 0.9969879518072289,
+      "risk": 0.003012048192771122
+    },
+    {
+      "coverage": 0.5,
+      "agreement_accuracy": 0.9903381642512077,
+      "risk": 0.009661835748792313
+    },
+    {
+      "coverage": 0.6,
+      "agreement_accuracy": 0.9738430583501007,
+      "risk": 0.026156941649899346
+    },
+    {
+      "coverage": 0.7000000000000001,
+      "agreement_accuracy": 0.9258620689655173,
+      "risk": 0.07413793103448274
+    },
+    {
+      "coverage": 0.8,
+      "agreement_accuracy": 0.8778280542986425,
+      "risk": 0.12217194570135748
+    },
+    {
+      "coverage": 0.9,
+      "agreement_accuracy": 0.8324396782841823,
+      "risk": 0.1675603217158177
+    },
+    {
+      "coverage": 1.0,
+      "agreement_accuracy": 0.7898550724637681,
+      "risk": 0.21014492753623193
+    }
+  ],
+  "threshold_reporting": [
+    {
+      "threshold": 0.5,
+      "answer_rate_if_applied": 0.9070048309178744,
+      "agreement_rate_among_answered": 0.8282290279627164,
+      "display_policy": "reporting only; the evidence-first dashboard does not hide lower-probability results"
+    },
+    {
+      "threshold": 0.6,
+      "answer_rate_if_applied": 0.8369565217391305,
+      "agreement_rate_among_answered": 0.86002886002886,
+      "display_policy": "reporting only; the evidence-first dashboard does not hide lower-probability results"
+    },
+    {
+      "threshold": 0.7,
+      "answer_rate_if_applied": 0.7693236714975845,
+      "agreement_rate_among_answered": 0.8869701726844584,
+      "display_policy": "reporting only; the evidence-first dashboard does not hide lower-probability results"
+    },
+    {
+      "threshold": 0.8,
+      "answer_rate_if_applied": 0.643719806763285,
+      "agreement_rate_among_answered": 0.9549718574108818,
+      "display_policy": "reporting only; the evidence-first dashboard does not hide lower-probability results"
+    },
+    {
+      "threshold": 0.9,
+      "answer_rate_if_applied": 0.5446859903381642,
+      "agreement_rate_among_answered": 0.9778270509977827,
+      "display_policy": "reporting only; the evidence-first dashboard does not hide lower-probability results"
+    }
+  ],
+  "reliability_bins": [
+    {
+      "lower": 0.0,
+      "upper": 0.1,
+      "count": 0,
+      "mean_probability": null,
+      "agreement_rate": null
+    },
+    {
+      "lower": 0.1,
+      "upper": 0.2,
+      "count": 4,
+      "mean_probability": 0.17613355765566924,
+      "agreement_rate": 0.5
+    },
+    {
+      "lower": 0.2,
+      "upper": 0.30000000000000004,
+      "count": 11,
+      "mean_probability": 0.24495718722406987,
+      "agreement_rate": 0.2727272727272727
+    },
+    {
+      "lower": 0.30000000000000004,
+      "upper": 0.4,
+      "count": 29,
+      "mean_probability": 0.34376313232082917,
+      "agreement_rate": 0.41379310344827586
+    },
+    {
+      "lower": 0.4,
+      "upper": 0.5,
+      "count": 33,
+      "mean_probability": 0.44812651289346767,
+      "agreement_rate": 0.45454545454545453
+    },
+    {
+      "lower": 0.5,
+      "upper": 0.6000000000000001,
+      "count": 58,
+      "mean_probability": 0.5501893307287996,
+      "agreement_rate": 0.4482758620689655
+    },
+    {
+      "lower": 0.6000000000000001,
+      "upper": 0.7000000000000001,
+      "count": 56,
+      "mean_probability": 0.654796018476055,
+      "agreement_rate": 0.5535714285714286
+    },
+    {
+      "lower": 0.7000000000000001,
+      "upper": 0.8,
+      "count": 104,
+      "mean_probability": 0.7520455925546476,
+      "agreement_rate": 0.5384615384615384
+    },
+    {
+      "lower": 0.8,
+      "upper": 0.9,
+      "count": 82,
+      "mean_probability": 0.8492750333903324,
+      "agreement_rate": 0.8292682926829268
+    },
+    {
+      "lower": 0.9,
+      "upper": 1.0,
+      "count": 451,
+      "mean_probability": 0.9721638767356333,
+      "agreement_rate": 0.9778270509977827
+    }
+  ],
+  "rung_distribution_and_agreement": [
+    {
+      "rung": "B",
+      "queries": 15,
+      "share": 0.018115942028985508,
+      "agreement_rate": 0.8666666666666667,
+      "mean_probability": 0.8458825939500134
+    },
+    {
+      "rung": "C",
+      "queries": 684,
+      "share": 0.8260869565217391,
+      "agreement_rate": 0.8230994152046783,
+      "mean_probability": 0.8475441393234682
+    },
+    {
+      "rung": "D",
+      "queries": 129,
+      "share": 0.15579710144927536,
+      "agreement_rate": 0.6046511627906976,
+      "mean_probability": 0.7025325568586371
+    }
+  ],
+  "model_artifact": "rq5_agreement_calibrator.joblib",
+  "model_artifact_sha256": "78548b31ddc568bffba6a0c8d77478e9351fb15f3977742e3832c5cf7d173b1b",
+  "features": [
+    "top_score",
+    "margin",
+    "support_clusters"
+  ],
+  "scaler_mean": [
+    1.0,
+    0.07790148591044468,
+    36.00361881785283
+  ],
+  "scaler_scale": [
+    1.0,
+    0.08639803353070348,
+    10.322366661304269
+  ],
+  "logistic_coefficients": [
+    0.0,
+    0.10859766005044867,
+    1.4912237737075629
+  ],
+  "logistic_intercept": 2.176394527048129,
+  "visibility_policy": "Calibration grades historical agreement; it never suppresses Limited, Exploratory, or Nearest-only evidence.",
+  "interpretation": "Probability estimates historical action-family agreement only. It is NOT probability of technical correctness, safety, or regulatory applicability."
+}

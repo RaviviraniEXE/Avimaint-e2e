@@ -1,0 +1,28 @@
+{
+  "version": "8.3.2",
+  "source_freeze": "final_rq4_rq5_selective_final",
+  "representation": "selective_byt5",
+  "files": {
+    "selective_cases_final.csv": "ad5b5771ae4c41b60402128fc9c99c6e59d87f4af332864a205106a85db30be2",
+    "predictions_problem_only_selective.jsonl": "bb5dcdd7246c1e3220f1fefc6f092591f99d6fb3874ac1a258bb9734bb7a8a15",
+    "research/split_selective_final.json": "ffeac9d75e5741eede355617402ce85ba95fbdb66d53ab1bfb85c7079fd6861f",
+    "research/PREREGISTERED_SELECTION_POLICY.json": "131f53f43e06b4f1b119089d61d6a236618dbcce1f529db2f1568beb1b99e77f",
+    "research/RQ4_FINAL_TEST.json": "37ef347cc07c92c45944ee9f5a88a4dccade3937716f51f1cd7c8838397ec560",
+    "research/RQ5_PLANNING_SUPPORT.json": "d97e903dff22855516b6e4a78263b77c79bb389b3db8ca2ef705817fafb1cae9",
+    "research/FINAL_TEST_LOCK.json": "5e6c5141729c35c0ab4113ffca40929cd6cbb12ce38d9efcb7ca6badeeadb738"
+  },
+  "counts": {
+    "records": 6169,
+    "train": 4319,
+    "dev": 925,
+    "test": 925,
+    "evidence_clusters": 3363,
+    "leakage_groups": 1820
+  },
+  "separation": {
+    "problem_column": "problem_normalized",
+    "action_column": "action_normalized",
+    "retrieval_key_column": "problem_retrieval_key",
+    "action_revealed_after_retrieval": true
+  }
+}

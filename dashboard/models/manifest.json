@@ -1,0 +1,39 @@
+{
+  "default_profile": {
+    "name": "frozen_artifacts",
+    "neural_models_required": 0,
+    "reason": "The final corpus and Selective SpERT outputs are precomputed; exact TRAIN text reuses its frozen graph and unseen wording uses deterministic schema-adapter relations without claiming live SpERT inference."
+  },
+  "optional_live_models": [
+    {
+      "id": "byt5_gold_checkpoint_1953",
+      "destination": "models/byt5",
+      "purpose": "Reserved for a future live-inference profile; the current dashboard does not load this model",
+      "source_hint_windows": "D:\\avimaint-e2e-research\\outputs\\normalization\\models\\byt5_gold_v1\\checkpoint-1953",
+      "weight_sha256": "c2d43fcb06a5865db4f0c8a8e5025bdea51bebec576287619b3a398e487d5191",
+      "required_files": ["config.json", "tokenizer_config.json"],
+      "weight_files_any": ["model.safetensors", "pytorch_model.bin"]
+    },
+    {
+      "id": "selective_byt5_spert_final",
+      "destination": "models/selective_spert/final_model",
+      "types_destination": "models/selective_spert/avimaint_types.json",
+      "purpose": "Reserved for a future live-inference profile; the current dashboard uses frozen precomputed predictions",
+      "source_hint_windows": "D:\\avimaint-e2e-research\\legacy_import\\maintenance-ie\\outputs\\spert_normalized\\selective_byt5\\save\\avimaint_spert_norm_selective_byt5\\2026-08-30_15-34-54_257127\\final_model",
+      "types_source_hint_windows": "D:\\avimaint-e2e-research\\legacy_import\\maintenance-ie\\outputs\\spert_normalized\\selective_byt5\\avimaint_types.json",
+      "weight_sha256": "1f9c094789f591991ad26ca65ca1c36689b57ff0dd248cd30b4fc81b853b4ad9",
+      "types_sha256": "3c4c68e2a6d38aa00061cdc9874e1fae4c078779d77f7daf5a7f22533cd0a9de",
+      "required_files": ["config.json"],
+      "weight_files_any": ["model.safetensors", "pytorch_model.bin"]
+    }
+  ],
+  "excluded_models": [
+    "raw SpERT",
+    "rules SpERT",
+    "plain ByT5 SpERT",
+    "rules-then-ByT5 SpERT",
+    "dense retriever",
+    "reranker",
+    "large language model"
+  ]
+}

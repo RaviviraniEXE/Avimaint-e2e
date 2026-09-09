@@ -1,0 +1,10 @@
+backend/.venv/
+.test-venv/
+**/.pytest_cache/
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+**/__pycache__/
+**/*.pyc
+models/byt5/
+models/selective_spert/final_model/
