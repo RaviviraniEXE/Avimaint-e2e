@@ -29,7 +29,7 @@ docker run --rm -p 7860:7860 -v avimaint-feedback:/data avimaint-dss
 
 On Windows, start Docker Desktop and run `START_DASHBOARD.bat`. It verifies the frozen files, builds the image, and serves the dashboard at `http://127.0.0.1:7860`.
 
-The local launcher keeps the optional usefulness feedback in a Docker volume. Only a SHA-256 query fingerprint and a small evidence snapshot are stored; the problem text is not stored, and the rating is explicitly not a technical-correctness label. On Hugging Face Spaces, attach persistent storage at `/data` if feedback must survive a container restart. Without persistent storage, dashboard operation is unaffected but feedback is ephemeral.
+The local launcher keeps the optional usefulness feedback in a Docker volume. Only a SHA-256 query fingerprint and a small evidence snapshot are stored; the problem text is not stored, and the rating is explicitly not a technical-correctness label. On Hugging Face Spaces, files written to the container are lost when the Space restarts. The dashboard itself is unaffected, but feedback remains ephemeral unless a Hugging Face Storage Bucket or another external store is connected in a later deployment profile.
 
 Verify before deployment:
 
@@ -46,6 +46,8 @@ Deploy on Hugging Face Spaces:
 1. Create a new Space and choose the **Docker** SDK.
 2. Copy the contents of this folder to the root of the Space repository.
 3. Commit and push. The container serves the frontend and API together on port `7860`.
-4. Optional: enable Space persistent storage mounted at `/data` to retain usability feedback across rebuilds.
+4. Optional: connect a Hugging Face Storage Bucket or another external store before using feedback as durable research data.
+
+For continuous deployment from the complete research repository, keep this directory at `dashboard/` and install `.github/workflows/deploy-dashboard.yml` at the repository root. Configure the GitHub Actions secret `HF_TOKEN` and repository variable `HF_SPACE_REPO_ID=owner/space-name`. A push to `main` that changes this directory then runs the backend tests, frontend tests and build, frozen-artifact verification, Docker build and live-container health check. The clean `dashboard/` source is synchronized to the Space root only after every validation gate succeeds.
 
 Required runtime artifacts are already under `data/`: the 6,169-row frozen Selective corpus, the 6,169 problem-only Selective SpERT predictions, the final split and selection locks, the frozen RQ4 result, and the RQ5 calibrator parameters.
