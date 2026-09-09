@@ -31,6 +31,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v7
+        with:
+          persist-credentials: false
 
       - name: Set up Python
         uses: actions/setup-python@v7
@@ -104,57 +106,70 @@ jobs:
         run: docker rm --force avimaint-dss-ci || true
 
   deploy:
-    name: Deploy dashboard directory to Hugging Face
+    name: Deploy validated image to Azure Container Apps
     needs: validate
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      AZURE_CORE_OUTPUT: none
+      APP_URL: https://avimaint-dss.icytree-faca4fb6.francecentral.azurecontainerapps.io
 
     steps:
       - name: Check out repository
         uses: actions/checkout@v7
-
-      - name: Set up Python
-        uses: actions/setup-python@v7
         with:
-          python-version: "3.11"
+          persist-credentials: false
 
-      - name: Install Hugging Face CLI
-        run: python -m pip install --disable-pip-version-check --upgrade huggingface_hub
+      - name: Sign in to Azure with OIDC
+        uses: azure/login@v3
+        with:
+          client-id: ${{ secrets.AVIMAINTDSS_AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AVIMAINTDSS_AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AVIMAINTDSS_AZURE_SUBSCRIPTION_ID }}
 
-      - name: Validate deployment configuration
+      - name: Build, push and deploy dashboard
+        uses: azure/container-apps-deploy-action@v2
+        with:
+          appSourcePath: ${{ github.workspace }}/dashboard
+          dockerfilePath: Dockerfile
+          registryUrl: caecf70177c3acr.azurecr.io
+          registryUsername: ${{ secrets.AVIMAINTDSS_REGISTRY_USERNAME }}
+          registryPassword: ${{ secrets.AVIMAINTDSS_REGISTRY_PASSWORD }}
+          containerAppName: avimaint-dss
+          containerAppEnvironment: avimaint-dss-env-frc
+          resourceGroup: avimaint-dss-rg
+          imageToBuild: caecf70177c3acr.azurecr.io/avimaint-dss:${{ github.sha }}
+          targetPort: 7860
+          ingress: external
+          location: francecentral
+
+      - name: Verify the deployed API and frontend
         shell: bash
-        env:
-          HF_SPACE_REPO_ID: ${{ vars.HF_SPACE_REPO_ID }}
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          if [[ -z "$HF_SPACE_REPO_ID" || "$HF_SPACE_REPO_ID" != */* ]]; then
-            echo "HF_SPACE_REPO_ID must be set to owner/space-name."
-            exit 1
-          fi
-          if [[ -z "$HF_TOKEN" ]]; then
-            echo "HF_TOKEN repository secret is missing."
-            exit 1
-          fi
+          rm -f health.json index.html
 
-      - name: Synchronize clean dashboard source to Space root
-        env:
-          HF_SPACE_REPO_ID: ${{ vars.HF_SPACE_REPO_ID }}
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: >-
-          hf upload "$HF_SPACE_REPO_ID"
-          ./dashboard .
-          --repo-type=space
-          --token="$HF_TOKEN"
-          --delete="*"
-          --exclude="frontend/node_modules/**"
-          --exclude="frontend/dist/**"
-          --exclude="backend/.venv/**"
-          --exclude=".test-venv/**"
-          --exclude="**/.pytest_cache/**"
-          --exclude="**/__pycache__/**"
-          --exclude="**/*.pyc"
-          --exclude="**/*.tsbuildinfo"
-          --exclude="models/byt5/**"
-          --exclude="models/selective_spert/final_model/**"
-          --commit-message="Deploy AviMaint-DSS 8.3.2 from GitHub ${GITHUB_SHA}"
+          for attempt in {1..36}; do
+            if curl --fail --silent --show-error               --connect-timeout 10 --max-time 30               "${APP_URL}/api/v1/health" > health.json; then
+              break
+            fi
+            sleep 5
+          done
+
+          test -s health.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          payload = json.loads(Path("health.json").read_text(encoding="utf-8"))
+          assert payload["status"] == "ready", payload
+          assert payload["api_version"] == "8.3.2", payload
+          assert payload["frontend"]["ready"] is True, payload
+          print("Azure health check passed:", payload["api_version"])
+          PY
+
+          curl --fail --silent --show-error             --connect-timeout 10 --max-time 30             "${APP_URL}/" > index.html
+          grep --quiet '<div id="root"></div>' index.html

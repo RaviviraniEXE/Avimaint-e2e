@@ -1,0 +1,3 @@
+[submodule "external/spert"]
+	path = external/spert
+	url = https://github.com/lavis-nlp/spert.git
