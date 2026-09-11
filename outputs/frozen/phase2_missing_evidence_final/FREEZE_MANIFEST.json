@@ -1,0 +1,109 @@
+{
+  "version": "phase2_missing_evidence_final_v1",
+  "created_utc": "2026-09-11T13:40:17.561180+00:00",
+  "status": "complete",
+  "purpose": "Complete the previously missing locked RQ1 normalization test and supplementary fixed-protocol robustness evidence.",
+  "training_performed": false,
+  "retuning_performed": false,
+  "normalization": {
+    "selection_population": "validation_only",
+    "selection_records": 926,
+    "locked_test_records": 741,
+    "systems": [
+      "raw",
+      "most_frequent_replacement",
+      "rules",
+      "byt5",
+      "selective_byt5",
+      "rules_then_byt5"
+    ],
+    "test_opened_only_after_explicit_confirmation": true,
+    "validation_verification": {
+      "manifest": "D:\\avimaint-e2e-research\\outputs\\normalization\\selection\\normalization_selection_manifest.json",
+      "manifest_sha256": "d298386e1952136f0d2dc5a3662ffe4a1bc78297a39daa528efeb7fe4c36716f",
+      "artifacts_checked": 12,
+      "selection_population": "validation_only",
+      "validation_records": 926,
+      "selected_system": "selective_byt5",
+      "test_results_consulted_at_selection": false
+    }
+  },
+  "robustness": {
+    "directory": "D:\\avimaint-e2e-research\\outputs\\runs\\phase2_final_protocol_robustness",
+    "manifest_sha256": "a7b59e3a83ff52701b18a8b664ef166accf50e185e34f2c044e8616d3a69c0af",
+    "sha256sums_sha256": "adbfeec4b6d5ee827e13a343e32a899dc35d538c784efb5b8feba3de8c63f0b7",
+    "files_checked": 10,
+    "configuration": {
+      "public_mode": "selective_canonical_bm25",
+      "internal_mode": "norm_bm25",
+      "tau": 0.15,
+      "aggregation": "cluster_expanded"
+    },
+    "clean_parity": {
+      "passed": true,
+      "absolute_tolerance": 1e-12,
+      "metrics_checked": [
+        "hit_at_1",
+        "hit_at_3",
+        "hit_at_5",
+        "mrr",
+        "ndcg_at_5",
+        "macro_action_family_recall",
+        "answer_rate",
+        "queries"
+      ]
+    }
+  },
+  "rq4_rq5": {
+    "unchanged": true,
+    "verification": {
+      "directory": "D:\\avimaint-e2e-research\\outputs\\frozen\\final_rq4_rq5_selective_final",
+      "manifest_sha256": "b1b8469fe2f6685644867a0761a885635132d8a3d4604c322735a419d70fbf98",
+      "sha256sums_sha256": "07d754203359944278c9413f40b047a2b7318bd45c8ff56ae91db04f3d6cf748",
+      "files_checked": 38,
+      "selected_configuration": {
+        "retrieval_mode": "selective_canonical_bm25",
+        "tau": 0.15,
+        "aggregation": "cluster_expanded"
+      }
+    }
+  },
+  "source_identity": {
+    "validation_selection_manifest_sha256": "d298386e1952136f0d2dc5a3662ffe4a1bc78297a39daa528efeb7fe4c36716f",
+    "normalization_split_manifest_sha256": "98cdae21c4900b63940d564502e470e5516be61af2ca942e7631993a8f7a57cc",
+    "rq4_rq5_freeze_manifest_sha256": "b1b8469fe2f6685644867a0761a885635132d8a3d4604c322735a419d70fbf98",
+    "rq4_rq5_sha256sums_sha256": "07d754203359944278c9413f40b047a2b7318bd45c8ff56ae91db04f3d6cf748",
+    "robustness_manifest_sha256": "a7b59e3a83ff52701b18a8b664ef166accf50e185e34f2c044e8616d3a69c0af",
+    "normalization_test_artifacts": {
+      "raw": {
+        "prediction_sha256": "ee70f5b204f95cb7f132f5005f7d5449579207a2af148178e152c4b0a508f08f",
+        "metrics_sha256": "8c1381cc7eb653b9c4a2c36878e7b4ef78022f6a4d36203fb943db3cb23f3f4c"
+      },
+      "most_frequent_replacement": {
+        "prediction_sha256": "af283884a669165daf8337adb3f6540ec926a1acca5e75b84ad3fca187c31f56",
+        "metrics_sha256": "d8b7216a6dc0dbb18cd8a693ab3b35b12604af3290f7f8e42f63eb0c9b87d9e7"
+      },
+      "rules": {
+        "prediction_sha256": "524d9279d0105a37496c8882d17921c77f651202f663b09519105fd913517e32",
+        "metrics_sha256": "25fed62f051eae7c552087d8239786bb8d2166ff0f117853ec3eb3af18ba2c8c"
+      },
+      "byt5": {
+        "prediction_sha256": "7decf31b8e0c4bdb0de74efc0712d734479342074193612928bcd623c1fdaeef",
+        "metrics_sha256": "80cf183c1dbbcf31d7c9f82adebdc3438274063f8f6a74aa90f8022677cc5f21"
+      },
+      "selective_byt5": {
+        "prediction_sha256": "c693f58d8cc840d1757797f4bf3903464629ad0b27de1eaa52517e2ce8375636",
+        "metrics_sha256": "b12c7d4f73480d0af28df27d17d62cb34a40c1d1fe77eae825309573940ab222"
+      },
+      "rules_then_byt5": {
+        "prediction_sha256": "d6c0c7ee3bd9010a9d390055ec07908fd6d890a37e60eb90ec748b33aa6e8928",
+        "metrics_sha256": "cb3a8f209de1f7e5f9d4f0d3549f4ded8c50c425cd46e280398032f67eb4748e"
+      }
+    }
+  },
+  "interpretation_boundaries": {
+    "normalization": "agreement with expert reference; not independent semantic correctness",
+    "retrieval": "agreement with recorded historical action family; not technical correctness or approval",
+    "robustness": "supplementary post-hoc fixed-protocol analysis"
+  }
+}

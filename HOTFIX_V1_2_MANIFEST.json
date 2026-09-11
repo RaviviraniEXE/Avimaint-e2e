@@ -1,0 +1,18 @@
+{
+  "name": "AviMaint Phase 2 freeze hotfix",
+  "version": "phase2_freeze_hotfix_v1.2",
+  "base_package": "AviMaint_Phase2_OneClick_Hotfix_v1.1",
+  "base_package_sha256": "1fbba4bfec476bef663cd4a932e02990a9f70698cc3031b344b2cbe76b16b3fe",
+  "delivery_policy": "local overlay only; no GitHub writes",
+  "root_cause": "phase2_freeze.py called os.replace without importing os",
+  "research_logic_changed": false,
+  "training_performed": false,
+  "retuning_performed": false,
+  "research_outputs_included": false,
+  "preserves_frozen_rq4_rq5": true,
+  "automated_tests": 8,
+  "payload_files": {
+    "scripts/thesis_phase2/phase2_freeze.py": "d5b908c994c71884d29c89ce3b59b9f5dc6298612b0b6dbeb0693f66383df538",
+    "scripts/thesis_phase2/test_phase2_hotfix.py": "8c575dfd8a06d674d8f93f69142591f8d8e29ff77cca4a8313b868a3a9aeee1d"
+  }
+}

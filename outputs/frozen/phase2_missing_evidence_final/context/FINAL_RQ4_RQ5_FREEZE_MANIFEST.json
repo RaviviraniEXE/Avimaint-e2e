@@ -1,0 +1,28 @@
+{
+  "version": "selective_rq4_rq5_final",
+  "created_utc": "2026-09-08T21:23:48.028148+00:00",
+  "status": "complete",
+  "representation": "selective_byt5",
+  "training_performed": false,
+  "thesis_rq4": "leakage-safe Selective-ByT5 historical-case retrieval",
+  "thesis_rq5": "DEV-calibrated auditable planning support",
+  "no_post_test_tuning": true,
+  "problem_only_retrieval": true,
+  "action_used_for_retrieval_or_clustering": false,
+  "selected_configuration": {
+    "retrieval_mode": "selective_canonical_bm25",
+    "tau": 0.15,
+    "aggregation": "cluster_expanded"
+  },
+  "single_support_visibility": "Limited historical evidence is retained; no tight display gate.",
+  "negative_mixed_policy": "Preserved separately and excluded from corroborating support.",
+  "preserved_raw_freeze": "D:\\avimaint-e2e-research\\outputs\\frozen\\final_rq4_rq5",
+  "preserved_raw_freeze_sums_sha256": "bff86b10885bf261a3ceb57a35f2e731aded9567a1cf530246d4effa3fa1a281",
+  "run_identity": {
+    "cases_sha256": "ad5b5771ae4c41b60402128fc9c99c6e59d87f4af332864a205106a85db30be2",
+    "protocol_sha256": "ffeac9d75e5741eede355617402ce85ba95fbdb66d53ab1bfb85c7079fd6861f",
+    "preregistered_policy_sha256": "131f53f43e06b4f1b119089d61d6a236618dbcce1f529db2f1568beb1b99e77f",
+    "predictions_sha256": "bb5dcdd7246c1e3220f1fefc6f092591f99d6fb3874ac1a258bb9734bb7a8a15",
+    "prediction_manifest_sha256": "3558826f2e0b45ea96983f6380442f5638fea4f893de65730b1a15a2af5fac79"
+  }
+}

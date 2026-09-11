@@ -1,0 +1,51 @@
+{
+  "bootstrap_95_ci": {
+    "cer": [
+      0.0569115571513214,
+      0.0680693350727303
+    ],
+    "change_f1": [
+      0.45670469479573134,
+      0.5113693530261386
+    ],
+    "change_precision": [
+      0.4664997122262724,
+      0.5245056943671708
+    ],
+    "change_recall": [
+      0.4465805729058741,
+      0.501602692926045
+    ],
+    "error_reduction_rate": [
+      0.625790947858112,
+      0.664799076268424
+    ],
+    "exact_match": [
+      0.26720647773279355,
+      0.3360323886639676
+    ],
+    "protected_token_accuracy": [
+      1.0,
+      1.0
+    ],
+    "wer": [
+      0.09825327375014961,
+      0.11430981527716073
+    ]
+  },
+  "metrics": {
+    "cer": 0.062317478433083814,
+    "change_f1": 0.48562037797863605,
+    "change_precision": 0.4966386554621849,
+    "change_recall": 0.47508038585209006,
+    "error_reduction_rate": 0.6450640542577242,
+    "exact_match": 0.29959514170040485,
+    "protected_token_accuracy": 1.0,
+    "wer": 0.1062725631768953
+  },
+  "prediction_path": "outputs\\normalization\\predictions\\byt5_gold_v1\\test_rules.csv",
+  "records": 741,
+  "run_id": "byt5_gold_v1",
+  "split": "test",
+  "system": "rules"
+}

@@ -1,0 +1,86 @@
+{
+  "version": "phase2_final_protocol_robustness_v1",
+  "created_utc": "2026-09-11T13:21:31.073388+00:00",
+  "status": "complete",
+  "supplementary_post_hoc_fixed_protocol": true,
+  "training_performed": false,
+  "selection_or_retuning_performed": false,
+  "representation": "selective_byt5",
+  "configuration": {
+    "public_mode": "selective_canonical_bm25",
+    "internal_mode": "norm_bm25",
+    "tau": 0.15,
+    "aggregation": "cluster_expanded"
+  },
+  "population": {
+    "partition": "locked_test",
+    "evaluable_queries": 828
+  },
+  "seed": 42,
+  "channel_isolation": "Truncation and spelling noise modify canonical problem text only; missing_structure removes structured fields only.",
+  "missing_structure_role": "negative control because the selected canonical-BM25 mode does not use structured fields",
+  "clean_parity": {
+    "passed": true,
+    "absolute_tolerance": 1e-12,
+    "metrics_checked": [
+      "hit_at_1",
+      "hit_at_3",
+      "hit_at_5",
+      "mrr",
+      "ndcg_at_5",
+      "macro_action_family_recall",
+      "answer_rate",
+      "queries"
+    ]
+  },
+  "interpretation": "Historical action-family agreement only; not technical correctness, safety, or regulatory approval.",
+  "input_identity": {
+    "rq4_final_test_sha256": "37ef347cc07c92c45944ee9f5a88a4dccade3937716f51f1cd7c8838397ec560",
+    "rq4_freeze_manifest_sha256": "b1b8469fe2f6685644867a0761a885635132d8a3d4604c322735a419d70fbf98",
+    "rq4_freeze_sums_sha256": "07d754203359944278c9413f40b047a2b7318bd45c8ff56ae91db04f3d6cf748",
+    "implementation_sha256": "0e32f5e457d98b36875f5b7a6b9bb190c6b71f57159dc4e07cb10990502589e8",
+    "run_identity": {
+      "cases_sha256": "ad5b5771ae4c41b60402128fc9c99c6e59d87f4af332864a205106a85db30be2",
+      "protocol_sha256": "ffeac9d75e5741eede355617402ce85ba95fbdb66d53ab1bfb85c7079fd6861f",
+      "preregistered_policy_sha256": "131f53f43e06b4f1b119089d61d6a236618dbcce1f529db2f1568beb1b99e77f",
+      "predictions_sha256": "bb5dcdd7246c1e3220f1fefc6f092591f99d6fb3874ac1a258bb9734bb7a8a15",
+      "prediction_manifest_sha256": "3558826f2e0b45ea96983f6380442f5638fea4f893de65730b1a15a2af5fac79"
+    },
+    "selected_configuration": {
+      "public_mode": "selective_canonical_bm25",
+      "internal_mode": "norm_bm25",
+      "tau": 0.15,
+      "aggregation": "cluster_expanded"
+    },
+    "conditions": [
+      {
+        "condition": "clean",
+        "value": 0.0
+      },
+      {
+        "condition": "truncation",
+        "value": 0.1
+      },
+      {
+        "condition": "truncation",
+        "value": 0.2
+      },
+      {
+        "condition": "truncation",
+        "value": 0.3
+      },
+      {
+        "condition": "spelling_noise",
+        "value": 0.05
+      },
+      {
+        "condition": "spelling_noise",
+        "value": 0.1
+      },
+      {
+        "condition": "missing_structure",
+        "value": 1.0
+      }
+    ]
+  }
+}

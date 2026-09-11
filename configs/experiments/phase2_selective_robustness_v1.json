@@ -1,0 +1,32 @@
+{
+  "version": "phase2_selective_robustness_v1",
+  "classification": "supplementary_posthoc_locked_protocol",
+  "seed": 42,
+  "source_freeze": "outputs/frozen/final_rq4_rq5_selective_final",
+  "representation": "selective_byt5",
+  "selected_configuration": {
+    "retrieval_mode": "selective_canonical_bm25",
+    "tau": 0.15,
+    "aggregation": "cluster_expanded"
+  },
+  "evaluation_partition": "frozen_test",
+  "expected_partition_records": 925,
+  "expected_evaluable_queries": 828,
+  "conditions": [
+    {"kind": "clean", "value": 0.0},
+    {"kind": "truncation", "value": 0.10},
+    {"kind": "truncation", "value": 0.20},
+    {"kind": "truncation", "value": 0.30},
+    {"kind": "spelling_noise", "value": 0.05},
+    {"kind": "spelling_noise", "value": 0.10},
+    {"kind": "missing_structure", "value": 1.0}
+  ],
+  "channel_isolation": {
+    "truncation_and_spelling_noise": "Change only the Selective normalized problem text; clean structured evidence is retained.",
+    "missing_structure": "Remove components, faults, entity types and relation types; normalized problem text is retained."
+  },
+  "metrics": ["hit_at_1", "hit_at_3", "hit_at_5", "mrr", "ndcg_at_5", "macro_action_family_recall"],
+  "training_performed": false,
+  "retuning_performed": false,
+  "clean_parity_required": true
+}
