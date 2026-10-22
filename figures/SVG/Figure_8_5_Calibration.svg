@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1640" height="660" viewBox="0 0 1640 660" font-family="Calibri, Carlito, Arial, sans-serif">
+<rect width="1640" height="660" fill="#ffffff"/>
+<text x="22" y="46" fill="#14140f" font-size="21" font-weight="700">a  Risk–coverage</text>
+<text x="22" y="70" fill="#52514e" font-size="15.5">Risk is 1 − historical-action-family agreement among the displayed queries.</text>
+<line x1="78" y1="586.0" x2="774.0" y2="586.0" stroke="#e3e2dd" stroke-width="1"/>
+<text x="67" y="591.0" fill="#8a8984" font-size="14.5" text-anchor="end">0</text>
+<line x1="78" y1="479.5" x2="774.0" y2="479.5" stroke="#e3e2dd" stroke-width="1"/>
+<text x="67" y="484.5" fill="#8a8984" font-size="14.5" text-anchor="end">0.05</text>
+<line x1="78" y1="373.0" x2="774.0" y2="373.0" stroke="#e3e2dd" stroke-width="1"/>
+<text x="67" y="378.0" fill="#8a8984" font-size="14.5" text-anchor="end">0.1</text>
+<line x1="78" y1="266.4" x2="774.0" y2="266.4" stroke="#e3e2dd" stroke-width="1"/>
+<text x="67" y="271.4" fill="#8a8984" font-size="14.5" text-anchor="end">0.15</text>
+<line x1="78" y1="159.9" x2="774.0" y2="159.9" stroke="#e3e2dd" stroke-width="1"/>
+<text x="67" y="164.9" fill="#8a8984" font-size="14.5" text-anchor="end">0.2</text>
+<text x="155.3" y="610" fill="#8a8984" font-size="14.5" text-anchor="middle">0.2</text>
+<text x="310.0" y="610" fill="#8a8984" font-size="14.5" text-anchor="middle">0.4</text>
+<text x="464.7" y="610" fill="#8a8984" font-size="14.5" text-anchor="middle">0.6</text>
+<text x="619.3" y="610" fill="#8a8984" font-size="14.5" text-anchor="middle">0.8</text>
+<text x="774.0" y="610" fill="#8a8984" font-size="14.5" text-anchor="middle">1</text>
+<line x1="78" y1="586" x2="774.0" y2="586" stroke="#a9a8a2" stroke-width="1.2"/>
+<text x="426.0" y="638" fill="#52514e" font-size="15.5" text-anchor="middle">Coverage (fraction of the 828 test queries displayed)</text>
+<text transform="translate(22,341.0) rotate(-90)" fill="#52514e" font-size="15.5" text-anchor="middle">Selective risk</text>
+<polyline points="78.0,560.3 155.3,573.2 232.7,577.4 310.0,579.6 387.3,565.4 464.7,530.3 542.0,428.1 619.3,325.7 696.7,229.0 774.0,138.3" fill="none" stroke="#2a78d6" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="78.0" cy="560.3" r="5.2" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="155.3" cy="573.2" r="5.2" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="232.7" cy="577.4" r="5.2" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="310.0" cy="579.6" r="5.2" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="387.3" cy="565.4" r="5.2" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="464.7" cy="530.3" r="5.2" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="542.0" cy="428.1" r="5.2" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="619.3" cy="325.7" r="5.2" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="696.7" cy="229.0" r="5.2" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<circle cx="774.0" cy="138.3" r="5.2" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<text x="764.0" y="122.3" fill="#14140f" font-size="15" font-weight="600" text-anchor="end">risk 0.2101 at full coverage</text>
+<line x1="310.0" y1="570.6" x2="310.0" y2="494.4" stroke="#a9a8a2" stroke-width="1.1"/>
+<text x="319.0" y="485.9" fill="#14140f" font-size="15" font-weight="600">risk 0.0030 at 40% coverage</text>
+<text x="862.0" y="46" fill="#14140f" font-size="21" font-weight="700">b  Reliability diagram</text>
+<text x="862.0" y="70" fill="#52514e" font-size="15.5">Ten equal-width probability bins; the two empty bins are omitted.</text>
+<line x1="918.0" y1="572.5" x2="1614.0" y2="572.5" stroke="#e3e2dd" stroke-width="1"/>
+<text x="907.0" y="577.5" fill="#8a8984" font-size="14.5" text-anchor="end">0</text>
+<line x1="918.0" y1="482.6" x2="1614.0" y2="482.6" stroke="#e3e2dd" stroke-width="1"/>
+<text x="907.0" y="487.6" fill="#8a8984" font-size="14.5" text-anchor="end">0.2</text>
+<line x1="918.0" y1="392.7" x2="1614.0" y2="392.7" stroke="#e3e2dd" stroke-width="1"/>
+<text x="907.0" y="397.7" fill="#8a8984" font-size="14.5" text-anchor="end">0.4</text>
+<line x1="918.0" y1="302.8" x2="1614.0" y2="302.8" stroke="#e3e2dd" stroke-width="1"/>
+<text x="907.0" y="307.8" fill="#8a8984" font-size="14.5" text-anchor="end">0.6</text>
+<line x1="918.0" y1="212.9" x2="1614.0" y2="212.9" stroke="#e3e2dd" stroke-width="1"/>
+<text x="907.0" y="217.9" fill="#8a8984" font-size="14.5" text-anchor="end">0.8</text>
+<line x1="918.0" y1="123.0" x2="1614.0" y2="123.0" stroke="#e3e2dd" stroke-width="1"/>
+<text x="907.0" y="128.0" fill="#8a8984" font-size="14.5" text-anchor="end">1</text>
+<text x="937.3" y="610" fill="#8a8984" font-size="14.5" text-anchor="middle">0</text>
+<text x="1066.2" y="610" fill="#8a8984" font-size="14.5" text-anchor="middle">0.2</text>
+<text x="1195.1" y="610" fill="#8a8984" font-size="14.5" text-anchor="middle">0.4</text>
+<text x="1324.0" y="610" fill="#8a8984" font-size="14.5" text-anchor="middle">0.6</text>
+<text x="1452.9" y="610" fill="#8a8984" font-size="14.5" text-anchor="middle">0.8</text>
+<text x="1581.8" y="610" fill="#8a8984" font-size="14.5" text-anchor="middle">1</text>
+<line x1="918.0" y1="586" x2="1614.0" y2="586" stroke="#a9a8a2" stroke-width="1.2"/>
+<text x="1266.0" y="638" fill="#52514e" font-size="15.5" text-anchor="middle">Mean predicted agreement probability</text>
+<text transform="translate(862.0,341.0) rotate(-90)" fill="#52514e" font-size="15.5" text-anchor="middle">Observed agreement rate</text>
+<line x1="937.3" y1="572.5" x2="1581.8" y2="123.0" stroke="#a9a8a2" stroke-width="1.6" stroke-dasharray="6 5"/>
+<text x="1314.3" y="282.6" fill="#8a8984" font-size="14" transform="rotate(-36 1314.3 282.6)">perfect calibration</text>
+<polyline points="1050.8,347.7 1095.2,449.9 1158.9,386.5 1226.1,368.2 1291.9,371.0 1359.3,323.7 1422.0,330.5 1484.6,199.7 1563.8,132.9" fill="none" stroke="#2a78d6" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="1050.8" cy="347.7" r="5.0" fill="#2a78d6" fill-opacity="0.88" stroke="#ffffff" stroke-width="2"/>
+<circle cx="1095.2" cy="449.9" r="5.5" fill="#2a78d6" fill-opacity="0.88" stroke="#ffffff" stroke-width="2"/>
+<circle cx="1158.9" cy="386.5" r="6.4" fill="#2a78d6" fill-opacity="0.88" stroke="#ffffff" stroke-width="2"/>
+<circle cx="1226.1" cy="368.2" r="6.5" fill="#2a78d6" fill-opacity="0.88" stroke="#ffffff" stroke-width="2"/>
+<circle cx="1291.9" cy="371.0" r="7.3" fill="#2a78d6" fill-opacity="0.88" stroke="#ffffff" stroke-width="2"/>
+<circle cx="1359.3" cy="323.7" r="7.2" fill="#2a78d6" fill-opacity="0.88" stroke="#ffffff" stroke-width="2"/>
+<circle cx="1422.0" cy="330.5" r="8.3" fill="#2a78d6" fill-opacity="0.88" stroke="#ffffff" stroke-width="2"/>
+<circle cx="1484.6" cy="199.7" r="7.9" fill="#2a78d6" fill-opacity="0.88" stroke="#ffffff" stroke-width="2"/>
+<circle cx="1563.8" cy="132.9" r="12.8" fill="#2a78d6" fill-opacity="0.88" stroke="#ffffff" stroke-width="2"/>
+<text x="1541.7" y="152.9" fill="#14140f" font-size="15" font-weight="600" text-anchor="end">n = 451</text>
+<text x="1437.0" y="335.7" fill="#14140f" font-size="15" font-weight="600">n = 104, over-confident</text>
+<text x="932.0" y="118.0" fill="#14140f" font-size="15.5" font-weight="600">ECE = 0.0505 · Brier = 0.1195</text>
+<text x="932.0" y="139.0" fill="#52514e" font-size="14">Marker area is proportional to the number of queries in the bin.</text>
+</svg>
